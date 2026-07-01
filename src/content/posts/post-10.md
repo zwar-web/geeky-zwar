@@ -2,7 +2,7 @@
 title: "My work from home workstation"
 date: 2026-04-04T10:00:00Z
 image: /images/post/post-2.png
-categories: ["programming"]
+categories: ["Hero Gear"]
 featured: false
 draft: false
 ---

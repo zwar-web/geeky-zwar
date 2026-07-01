@@ -3,7 +3,7 @@ import config from "@/config/config.json";
 import DynamicIcon from "@/helpers/DynamicIcon";
 import Base from "@/layouts/Base.astro";
 import { getTaxonomy } from "@/lib/taxonomyParser.astro";
-import { humanize, markdownify } from "@/lib/utils/textConverter";
+import { humanize, markdownify, slugify } from "@/lib/utils/textConverter";
 import { getCollection } from "astro:content";
 
 const { post_folder } = config.settings;
@@ -14,7 +14,7 @@ const posts = await getCollection(
 const categories = await getTaxonomy(post_folder, "categories");
 const categoriesWithPostsCount = categories.map((category) => {
   const filteredPosts = posts.filter((post) =>
-    post.data.categories?.includes(category)
+    post.data.categories?.some((item) => slugify(item) === category),
   );
   return {
     name: category,

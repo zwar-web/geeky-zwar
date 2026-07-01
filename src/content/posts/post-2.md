@@ -2,7 +2,7 @@
 title: My work from home workstation
 date: 2026-04-04T02:00:00Z
 image: /images/post/post-2.png
-categories: ["drone"]
+categories: ["Z War Game Tool"]
 featured: true
 draft: false
 ---

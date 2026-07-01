@@ -7,7 +7,7 @@ import DynamicIcon from "@/helpers/DynamicIcon";
 import { getTaxonomy } from "@/lib/taxonomyParser.astro";
 import dateFormat from "@/lib/utils/dateFormat";
 import { sortByDate } from "@/lib/utils/sortFunctions";
-import { markdownify, slugify } from "@/lib/utils/textConverter";
+import { markdownify, slugify, humanize } from "@/lib/utils/textConverter";
 import { Image } from "astro:assets";
 import type { CollectionEntry } from "astro:content";
 
@@ -25,7 +25,7 @@ const featuredPosts: CollectionEntry<"posts">[] = sortByDate(posts).filter(
 );
 const categoriesWithPostsCount = catagories.map((category) => {
   const filteredPosts = posts.filter((post) =>
-    post.data.categories?.includes(category),
+    post.data.categories?.some((item) => slugify(item) === category),
   );
   return {
     name: category,
@@ -65,7 +65,7 @@ const categoriesWithPostsCount = catagories.map((category) => {
       <div class="mt-6 rounded border border-border p-6 dark:border-darkmode-border">
         <h4
           class="section-title mb-12 text-center"
-          set:text={markdownify(featured_posts.title)}
+          set:text={markdownify(categories.title)}
         />
         <ul>
           {categoriesWithPostsCount.map((category, i) => (
@@ -93,7 +93,7 @@ const categoriesWithPostsCount = catagories.map((category) => {
                 />
               </svg>
               <a class="py-2" href={`/categories/${slugify(category.name)}`}>
-                {slugify(category.name)}
+                {humanize(category.name)}
                 <span class="absolute right-0 top-1/2 -translate-y-1/2 text-gray-500">
                   {category.posts}
                 </span>

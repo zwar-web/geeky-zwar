@@ -2,7 +2,7 @@
 title: "How to make toys from old Olarpaper"
 date: 2026-04-04T01:00:00Z
 image: /images/post/post-1.png
-categories: ["programming"]
+categories: ["Heroes"]
 featured: true
 draft: false
 ---

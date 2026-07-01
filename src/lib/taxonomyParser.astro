@@ -1,9 +1,14 @@
 ---
 import { getSinglePage } from "@/lib/contentParser.astro";
 import { slugify } from "@/lib/utils/textConverter";
+import categoriesConfig from "@/config/categories.json";
 
 // get taxonomy from frontmatter
 export const getTaxonomy = async (collection: any, name: string) => {
+  if (name === "categories" && categoriesConfig.list?.length) {
+    return categoriesConfig.list.map((category: string) => slugify(category));
+  }
+
   const singlePages = await getSinglePage(collection);
   const taxonomyPages = singlePages.map((page: any) => page.data[name]);
   let taxonomies: string[] = [];

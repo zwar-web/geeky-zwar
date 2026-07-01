@@ -2,7 +2,7 @@
 title: "Github Repository Controls"
 date: 2026-04-04T09:00:00Z
 image: /images/post/post-1.png
-categories: ["workstation", "youtube"]
+categories: ["Dark War Survival"]
 featured: false
 draft: false
 ---

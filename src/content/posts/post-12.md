@@ -2,7 +2,7 @@
 title: "What is a Virtual Assistant"
 date: 2026-04-04T12:00:00Z
 image: /images/post/post-4.png
-categories: ["github"]
+categories: ["Events"]
 featured: true
 draft: false
 ---

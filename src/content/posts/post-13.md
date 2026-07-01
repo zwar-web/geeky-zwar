@@ -2,7 +2,7 @@
 title: "Why you need to learn PHP"
 date: 2026-04-04T13:00:00Z
 image: /images/post/post-5.png
-categories: ["youtube", "artificial-intelligence"]
+categories: ["Hive Layouts"]
 featured: false
 draft: false
 ---

@@ -2,7 +2,7 @@
 title: "Drone Software and Development"
 date: 2026-04-04T08:00:00Z
 image: /images/post/post-8.png
-categories: ["drone", "robotics"]
+categories: ["Territory Tools"]
 featured: true
 draft: false
 ---
