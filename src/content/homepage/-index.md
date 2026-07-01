@@ -1,14 +1,18 @@
 ---
 banner:
-  title: Welcome **!**
-  title_small: "to John Bravo's Blog"
-  content: Are Developer and recently started your own business Already made website to ensure presence wants to develop.
+  title: Z War Alliance Manager Tool **!**
+  title_small: The Perfect Partner for Dark War Survival Alliance Leaders
+  content: "You'll find a growing library of guides and information to support
+    your gameplay, grow faster and outpace your rivals. For Alliance leaders,
+    this is the home of Z War GCCS - a tool for Hive & Territory Management,
+    Event Planning and Scheduling, supported with Discord bots and opeb access
+    via the web where discord, FB etc are banned for some players. "
   image_enable: true
   image: /images/banner-author.png
   button:
     enable: true
-    label: Know About Me
-    link: /about
+    label: "Z War Alliance Manager "
+    link: https://z-war.icu/app
     rel: ""
 
 featured_posts:
@@ -16,11 +20,12 @@ featured_posts:
   title: Featured Posts
 
 promotion:
-  enable: true
+  enable: false
   image: /images/promotion.png
-  link: "/contact"
+  link: /contact
 
 recent_posts:
   title: Recent Posts
   enable: true
 ---
+​
