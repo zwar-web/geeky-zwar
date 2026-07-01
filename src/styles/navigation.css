@@ -35,7 +35,7 @@ body.menu-open {
 }
 
 .nav-link {
-  @apply rounded-[30px] px-6 py-2.5 text-left font-secondary text-[13.5px] capitalize  text-text-dark transition hover:bg-primary hover:text-white dark:text-darkmode-text-light md:px-3 md:py-3 lg:text-center xl:px-5;
+  @apply rounded-[30px] px-6 py-2.5 text-left font-primary text-[13.5px] capitalize  text-text-dark transition hover:bg-primary hover:text-white dark:text-darkmode-text-light md:px-3 md:py-3 lg:text-center xl:px-5;
 }
 .nav-link.active {
   @apply bg-primary text-white;

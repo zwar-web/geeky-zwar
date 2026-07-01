@@ -43,7 +43,7 @@ const pageList = [...Array(totalPages).keys()].map((i) => i + 1);
         pagination === currentPage ? (
           <span
             aria-current="page"
-            class={`inline-flex h-[38px] w-[38px] items-center justify-center rounded-full bg-primary px-4 py-1 font-secondary text-lg font-bold leading-none text-white dark:text-darkmode-text-light`}>
+            class={`inline-flex h-[38px] w-[38px] items-center justify-center rounded-full bg-primary px-4 py-1 font-primary text-lg font-bold leading-none text-white dark:text-darkmode-text-light`}>
             {pagination}
           </span>
         ) : (
@@ -54,7 +54,7 @@ const pageList = [...Array(totalPages).keys()].map((i) => i + 1);
                 : `${section ? "/" + section : ""}/page/${pagination}`
             }
             aria-current="page"
-            class={`inline-flex h-[38px] w-[38px] items-center justify-center rounded-full px-4 py-1 font-secondary text-lg font-bold leading-none text-text-dark dark:text-darkmode-text-light`}>
+            class={`inline-flex h-[38px] w-[38px] items-center justify-center rounded-full px-4 py-1 font-primary text-lg font-bold leading-none text-text-dark dark:text-darkmode-text-light`}>
             {pagination}
           </a>
         )
