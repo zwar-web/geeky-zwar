@@ -1,6 +1,6 @@
 ---
 banner:
-  title: Z War Alliance Manager Tool **!**
+  title: "**Z War** Alliance Manager Tool **!**"
   title_small: The Perfect Partner for Dark War Survival Alliance Leaders
   content: "You'll find a growing library of guides and information to support
     your gameplay, grow faster and outpace your rivals. For Alliance leaders,
