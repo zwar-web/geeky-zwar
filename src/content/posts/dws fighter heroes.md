@@ -1,5 +1,5 @@
 ---
-title: "Fighter Heroes "
+title: "Dark War Fighter Heroes "
 date: 2026-04-04T01:00:00.000Z
 image: /images/fighter_hero_group.png
 image2: ""
@@ -7,7 +7,7 @@ categories:
   - Heroes
   - Fighter Heroes
 featured: true
-draft: false
+draft: true
 image3: ""
 ---
 # Fighter Faction Heroes
