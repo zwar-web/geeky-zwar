@@ -1,0 +1,9 @@
+{
+  "redirects": [
+    {
+      "source": "/posts/post-1",
+      "destination": "/posts/dws-fighter-heroes",
+      "permanent": true
+    }
+  ]
+}

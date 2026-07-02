@@ -7,7 +7,7 @@ categories:
   - Heroes
   - Fighter Heroes
 featured: true
-draft: true
+draft: false
 image3: ""
 ---
 # Fighter Faction Heroes
