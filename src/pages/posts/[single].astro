@@ -1,5 +1,6 @@
 ---
 import InnerPagination from "@/components/InnerPagination.astro";
+import HeroImageCarousel from "@/components/HeroImageCarousel.astro";
 import Post from "@/components/post.astro";
 import { disqus, settings } from "@/config/config.json";
 import Disqus from "@/helpers/Disqus";
@@ -11,7 +12,6 @@ import dateFormat from "@/lib/utils/dateFormat";
 import similarItems from "@/lib/utils/similarItems";
 import { markdownify } from "@/lib/utils/textConverter";
 import Sidebar from "@/partials/Sidebar.astro";
-import { Image } from "astro:assets";
 import { type CollectionEntry, render } from "astro:content";
 const { post_folder, InnerPaginationOptions } = settings;
 
@@ -31,7 +31,7 @@ export async function getStaticPaths() {
 }
 
 const { post } = Astro.props;
-const { title, image, date, description, meta_title } = post.data;
+const { title, image, images, date, description, meta_title } = post.data;
 const { Content } = await render(post);
 const categories = await getTaxonomy(post_folder, "categories");
 const postEntries = await getSinglePage("posts");
@@ -46,14 +46,14 @@ const relatedPosts = similarItems(post, postEntries);
           <article>
             <div class="relative">
               {
-                image && (
-                  <Image
-                    src={image}
-                    height={500}
-                    width={1000}
+                (image || images?.length) && (
+                  <HeroImageCarousel
+                    image={image}
+                    images={images}
                     alt={title ?? ""}
-                    class="rounded-lg"
-                    format="webp"
+                    width={1000}
+                    height={500}
+                    imgClass="w-full h-auto rounded-lg object-cover"
                   />
                 )
               }

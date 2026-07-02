@@ -1,13 +1,13 @@
 ---
 import Base from "@/layouts/Base.astro";
+import HeroImageCarousel from "@/components/HeroImageCarousel.astro";
 import { markdownify } from "@/lib/utils/textConverter";
-import { Image } from "astro:assets";
 import type { CollectionEntry } from "astro:content";
 import { getEntry, render } from "astro:content";
 
 const about = (await getEntry("about", "-index")) as CollectionEntry<"about">;
 const { Content } = await render(about);
-const { title, image, education, experience, description, meta_title } =
+const { title, image, images, education, experience, description, meta_title } =
   about.data;
 ---
 
@@ -15,15 +15,15 @@ const { title, image, education, experience, description, meta_title } =
   <section class="section">
     <div class="container text-center">
       {
-        image && (
+        (image || images?.length) && (
           <div class="mb-8">
-            <Image
-              src={image}
+            <HeroImageCarousel
+              image={image}
+              images={images}
+              alt={title || ""}
               width={1298}
               height={616}
-              alt={title || ""}
-              class="rounded-lg"
-              format="webp"
+              imgClass="w-full h-auto rounded-lg object-cover"
             />
           </div>
         )

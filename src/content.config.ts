@@ -7,6 +7,7 @@ const aboutCollection = defineCollection({
   schema: z.object({
     title: z.string().optional(),
     image: z.string().optional(),
+    images: z.array(z.string()).optional(),
     meta_title: z.string().optional(),
     description: z.string().optional(),
     education: z.object({
@@ -52,6 +53,7 @@ const homepageCollection = defineCollection({
       content: z.string(),
       image_enable: z.boolean(),
       image: z.string(),
+      images: z.array(z.string()).optional(),
       button: z.object({
         enable: z.boolean(),
         label: z.string(),
@@ -87,6 +89,7 @@ const postsCollection = defineCollection({
     description: z.string().optional(),
     date: z.coerce.date().optional(),
     image: z.string().optional(),
+    images: z.array(z.string()).optional(),
     categories: z.array(z.string()).optional(),
     featured: z.boolean().optional(),
     draft: z.boolean().optional(),

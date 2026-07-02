@@ -17,6 +17,7 @@
   @import "./components.css";
   @import "./navigation.css";
   @import "./buttons.css";
+  @import "./hero-carousel.css";
 }
 
 @theme {

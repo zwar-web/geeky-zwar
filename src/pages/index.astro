@@ -1,5 +1,6 @@
 ---
 import Pagination from "@/components/Pagination.astro";
+import HeroImageCarousel from "@/components/HeroImageCarousel.astro";
 import Post from "@/components/post.astro";
 import { settings } from "@/config/config.json";
 import DynamicIcon from "@/helpers/DynamicIcon";
@@ -62,13 +63,13 @@ const featuredPosts = posts.filter((post) => post.data.featured);
         {
           banner.image_enable && (
             <div class="col-9 lg:col-6">
-              <Image
-                class="mx-auto object-contain"
-                src={banner.image}
+              <HeroImageCarousel
+                image={banner.image}
+                images={banner.images}
+                alt="Banner"
                 width={548}
                 height={443}
-                format="webp"
-                alt="Banner"
+                imgClass="mx-auto h-auto w-full object-contain rounded-lg"
                 loading="eager"
               />
             </div>

@@ -48,6 +48,14 @@
       ]
     },
     {
+      "name": "images",
+      "label": "Carousel images",
+      "type": "Array",
+      "value": [],
+      "defaultValue": "",
+      "description": "Optional extra hero slides. First slide falls back to Image when empty."
+    },
+    {
       "name": "featured",
       "label": "Featured",
       "type": "boolean",

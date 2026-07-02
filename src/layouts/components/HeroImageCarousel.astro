@@ -1,0 +1,153 @@
+---
+import HeroImageSwiper from "@/components/HeroImageSwiper";
+import { resolveHeroImages } from "@/lib/utils/resolveHeroImages";
+import { Image } from "astro:assets";
+
+export type HeroCarouselEngine = "embla" | "swiper";
+
+interface Props {
+  image?: string;
+  images?: string[];
+  alt?: string;
+  width?: number;
+  height?: number;
+  class?: string;
+  imgClass?: string;
+  engine?: HeroCarouselEngine;
+  loading?: "eager" | "lazy";
+}
+
+const {
+  image,
+  images,
+  alt = "",
+  width = 1000,
+  height = 500,
+  class: className = "",
+  imgClass = "w-full h-auto rounded-lg object-cover",
+  engine = "embla",
+  loading = "lazy",
+} = Astro.props;
+
+const slides = resolveHeroImages(image, images);
+const carouselId = `hero-carousel-${Astro.uid}`;
+---
+
+{
+  slides.length === 0 ? null : slides.length === 1 ? (
+    <Image
+      src={slides[0]}
+      width={width}
+      height={height}
+      alt={alt}
+      class:list={[imgClass, className]}
+      format="webp"
+      loading={loading}
+    />
+  ) : engine === "swiper" ? (
+    <HeroImageSwiper
+      client:load
+      images={slides}
+      alt={alt}
+      width={width}
+      height={height}
+      className={className}
+      imgClass={imgClass}
+      loading={loading}
+    />
+  ) : (
+    <div
+      class:list={["hero-carousel hero-carousel__embla", className]}
+      data-hero-embla
+      id={carouselId}
+    >
+      <div class="embla__viewport">
+        <div class="embla__container">
+          {
+            slides.map((src, index) => (
+              <div class="embla__slide">
+                <Image
+                  src={src}
+                  width={width}
+                  height={height}
+                  alt={alt}
+                  class={imgClass}
+                  format="webp"
+                  loading={index === 0 ? loading : "lazy"}
+                />
+              </div>
+            ))
+          }
+        </div>
+      </div>
+      <div class="hero-carousel__controls" aria-hidden="false">
+        <button
+          type="button"
+          class="hero-carousel__btn embla__prev"
+          aria-label="Previous slide"
+        >
+          ‹
+        </button>
+        <button
+          type="button"
+          class="hero-carousel__btn embla__next"
+          aria-label="Next slide"
+        >
+          ›
+        </button>
+      </div>
+      <div class="hero-carousel__dots embla__dots" />
+    </div>
+  )
+}
+
+<script>
+  import EmblaCarousel from "embla-carousel";
+
+  function initHeroEmblaCarousels() {
+    document.querySelectorAll<HTMLElement>("[data-hero-embla]").forEach((root) => {
+      if (root.dataset.emblaReady === "true") return;
+
+      const viewport = root.querySelector<HTMLElement>(".embla__viewport");
+      if (!viewport) return;
+
+      const slideNodes = root.querySelectorAll(".embla__slide");
+      if (slideNodes.length <= 1) return;
+
+      root.dataset.emblaReady = "true";
+
+      const embla = EmblaCarousel(viewport, { loop: true, align: "start" });
+      const prevBtn = root.querySelector<HTMLButtonElement>(".embla__prev");
+      const nextBtn = root.querySelector<HTMLButtonElement>(".embla__next");
+      const dotsRoot = root.querySelector<HTMLElement>(".embla__dots");
+
+      prevBtn?.addEventListener("click", () => embla.scrollPrev());
+      nextBtn?.addEventListener("click", () => embla.scrollNext());
+
+      if (dotsRoot) {
+        const dotNodes = embla.scrollSnapList().map((_, index) => {
+          const dot = document.createElement("button");
+          dot.type = "button";
+          dot.className = "hero-carousel__dot";
+          dot.setAttribute("aria-label", `Go to slide ${index + 1}`);
+          dot.addEventListener("click", () => embla.scrollTo(index));
+          dotsRoot.appendChild(dot);
+          return dot;
+        });
+
+        const setSelectedDot = () => {
+          const selected = embla.selectedScrollSnap();
+          dotNodes.forEach((dot, index) => {
+            dot.classList.toggle("is-selected", index === selected);
+          });
+        };
+
+        embla.on("select", setSelectedDot);
+        setSelectedDot();
+      }
+    });
+  }
+
+  initHeroEmblaCarousels();
+  document.addEventListener("astro:page-load", initHeroEmblaCarousels);
+</script>
