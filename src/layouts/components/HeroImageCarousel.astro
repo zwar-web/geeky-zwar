@@ -8,6 +8,9 @@ export type HeroCarouselEngine = "embla" | "swiper";
 interface Props {
   image?: string;
   images?: string[];
+  image_2?: string;
+  image_3?: string;
+  image_4?: string;
   alt?: string;
   width?: number;
   height?: number;
@@ -20,6 +23,9 @@ interface Props {
 const {
   image,
   images,
+  image_2,
+  image_3,
+  image_4,
   alt = "",
   width = 1000,
   height = 500,
@@ -29,7 +35,7 @@ const {
   loading = "lazy",
 } = Astro.props;
 
-const slides = resolveHeroImages(image, images);
+const slides = resolveHeroImages({ image, images, image_2, image_3, image_4 });
 const carouselId = `hero-carousel-${Astro.uid}`;
 ---
 

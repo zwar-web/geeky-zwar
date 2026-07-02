@@ -1,6 +1,6 @@
 {
-  "file": "src/content/posts/post-1.md",
-  "name": "posts",
+  "file": "src/content/about/-index.md",
+  "name": "about",
   "fileType": "md",
   "fmType": "yaml",
   "template": [
@@ -9,24 +9,13 @@
       "label": "Title",
       "type": "string",
       "value": "",
-      "isRequired": true,
       "defaultValue": ""
-    },
-    {
-      "name": "date",
-      "label": "Date",
-      "type": "Date",
-      "value": "",
-      "isRequired": true,
-      "defaultValue": "",
-      "alwaysUseCurrentDate": false
     },
     {
       "name": "image",
       "label": "Hero image — slide 1",
       "type": "media",
       "value": "",
-      "isRequired": true,
       "defaultValue": ""
     },
     {
@@ -51,36 +40,17 @@
       "defaultValue": ""
     },
     {
-      "name": "categories",
-      "label": "Categories",
-      "type": "Array",
-      "value": [],
-      "isRequired": true,
-      "defaultValue": "",
-      "options": [
-        "Heroes",
-        "Hero Gear",
-        "Pets",
-        "Events",
-        "Hive Layouts",
-        "Territory Tools",
-        "Dark War Survival",
-        "Z War Game Tool"
-      ]
-    },
-    {
-      "name": "featured",
-      "label": "Featured",
-      "type": "boolean",
-      "value": false,
+      "name": "meta_title",
+      "label": "Meta title",
+      "type": "string",
+      "value": "",
       "defaultValue": ""
     },
     {
-      "name": "draft",
-      "label": "Draft",
-      "type": "boolean",
-      "value": false,
-      "isRequired": true,
+      "name": "description",
+      "label": "Description",
+      "type": "string",
+      "value": "",
       "defaultValue": ""
     }
   ]

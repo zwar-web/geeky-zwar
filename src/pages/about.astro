@@ -7,7 +7,7 @@ import { getEntry, render } from "astro:content";
 
 const about = (await getEntry("about", "-index")) as CollectionEntry<"about">;
 const { Content } = await render(about);
-const { title, image, images, education, experience, description, meta_title } =
+const { title, image, image_2, image_3, image_4, images, education, experience, description, meta_title } =
   about.data;
 ---
 
@@ -15,11 +15,14 @@ const { title, image, images, education, experience, description, meta_title } =
   <section class="section">
     <div class="container text-center">
       {
-        (image || images?.length) && (
+        (image || image_2 || image_3 || image_4 || images?.length) && (
           <div class="mb-8">
             <HeroImageCarousel
               image={image}
               images={images}
+              image_2={image_2}
+              image_3={image_3}
+              image_4={image_4}
               alt={title || ""}
               width={1298}
               height={616}
