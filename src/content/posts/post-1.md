@@ -6,7 +6,8 @@ image2: /images/post/post-2.png
 categories:
   - Heroes
 featured: true
-draft: true
+draft: false
+image3: /images/Screenshot from 2026-07-01 17-03-11.png
 ---
 
 Nemo vel ad consectetur namut rutrum ex, venenatis sollicitudin urna. Aliquam erat volutpat. Integer eu ipsum sem. Ut bibendum lacus vestibulum maximus suscipit. Quisque vitae nibh iaculis neque blandit euismod.
