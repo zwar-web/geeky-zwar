@@ -1,14 +1,14 @@
 ---
 title: "Fighter Heroes "
 date: 2026-04-04T01:00:00.000Z
-image: /images/post/post-1.png
-image2: /images/post/post-2.png
+image: /images/fighter_hero_group.png
+image2: ""
 categories:
   - Heroes
   - Fighter Heroes
 featured: true
 draft: false
-image3: /images/Screenshot from 2026-07-01 17-03-11.png
+image3: ""
 ---
 # Fighter Faction Heroes
 
@@ -40,8 +40,6 @@ _**Guy**_
 
 A key hero for the early game is Guy. Initially, he's very strong versus the other heroes you acquire early game. He's a utility hero, though, and his third skill, “Samurais Gift” increases energy recovery and food gains from Adventure Camp. This is useful for quite some time, but as I'll cover in other articles, you'll be resetting his first and second skills to 1 to recover the books used for newer, stronger heros.&#x20;
 
-​
-
 ![|Guy, FIghter Hero, Dark War Surival Early Hero](</images/Screenshot from 2026-07-02 14-56-42.png>)
 
 **Catherine & Rex**
@@ -52,19 +50,7 @@ This is where the more experienced players will rue the investment made here aft
 
 This hero is your first real power upgrade Hero, 4 battle skills make him a must-have and will introduce the Exclusive Weapons arc. He will be "downgraded when Ella arrives in Season 6. This may temper your rush to level up his Exclusive Weapon, which you can move to another hero with a special token for £50, if you can bear that pain!  His 3rd skill is a fighter-specific upgrade boosting ATK (through Star Level) and DEF through skill level.&#x20;
 
-​
-
 ![Tristan, FIghter, Season 1
 ](</images/Screenshot from 2026-07-02 14-56-08.png>)
 
-​
-
-​
-
 Season 2 Heros
-
-​
-
-​
-
-​
