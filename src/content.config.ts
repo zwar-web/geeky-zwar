@@ -7,7 +7,12 @@ const aboutCollection = defineCollection({
   schema: z.object({
     title: z.string().optional(),
     image: z.string().optional(),
-    images: z.array(z.string()).optional(),
+    images: z
+      .array(z.union([z.string(), z.object({ url: z.string().optional() })]))
+      .optional(),
+    image2: z.string().optional(),
+    image3: z.string().optional(),
+    image4: z.string().optional(),
     image_2: z.string().optional(),
     image_3: z.string().optional(),
     image_4: z.string().optional(),
@@ -56,7 +61,12 @@ const homepageCollection = defineCollection({
       content: z.string(),
       image_enable: z.boolean(),
       image: z.string(),
-      images: z.array(z.string()).optional(),
+      images: z
+        .array(z.union([z.string(), z.object({ url: z.string().optional() })]))
+        .optional(),
+      image2: z.string().optional(),
+      image3: z.string().optional(),
+      image4: z.string().optional(),
       image_2: z.string().optional(),
       image_3: z.string().optional(),
       image_4: z.string().optional(),
@@ -95,7 +105,12 @@ const postsCollection = defineCollection({
     description: z.string().optional(),
     date: z.coerce.date().optional(),
     image: z.string().optional(),
-    images: z.array(z.string()).optional(),
+    images: z
+      .array(z.union([z.string(), z.object({ url: z.string().optional() })]))
+      .optional(),
+    image2: z.string().optional(),
+    image3: z.string().optional(),
+    image4: z.string().optional(),
     image_2: z.string().optional(),
     image_3: z.string().optional(),
     image_4: z.string().optional(),

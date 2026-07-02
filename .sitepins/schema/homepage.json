@@ -41,28 +41,28 @@
         },
         {
           "name": "image",
-          "label": "Banner image — slide 1",
+          "label": "Banner image (slide 1)",
           "type": "media",
           "value": "",
           "defaultValue": ""
         },
         {
-          "name": "image_2",
-          "label": "Banner image — slide 2 (optional slideshow)",
+          "name": "image2",
+          "label": "Banner slide 2 — adds slideshow",
           "type": "media",
           "value": "",
           "defaultValue": ""
         },
         {
-          "name": "image_3",
-          "label": "Banner image — slide 3 (optional)",
+          "name": "image3",
+          "label": "Banner slide 3",
           "type": "media",
           "value": "",
           "defaultValue": ""
         },
         {
-          "name": "image_4",
-          "label": "Banner image — slide 4 (optional)",
+          "name": "image4",
+          "label": "Banner slide 4",
           "type": "media",
           "value": "",
           "defaultValue": ""

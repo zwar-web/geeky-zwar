@@ -27,21 +27,4 @@ promotion:
 recent_posts:
   title: Recent Posts
   enable: true
-draft: true
 ---
-test text
-
-![](/images/author.png)
-
-​
-
-| header | header | ​ | ​ | ​ | ​ |
-| ------ | ------ | - | - | - | - |
-| ​      | ​      | ​ | ​ | ​ | ​ |
-| ​      | ​      | ​ | ​ | ​ | ​ |
-| ​      | ​      | ​ | ​ | ​ | ​ |
-| ​      | ​      | ​ | ​ | ​ | ​ |
-
-more text
-
-​

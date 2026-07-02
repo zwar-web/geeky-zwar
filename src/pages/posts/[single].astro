@@ -31,7 +31,7 @@ export async function getStaticPaths() {
 }
 
 const { post } = Astro.props;
-const { title, image, image_2, image_3, image_4, images, date, description, meta_title } = post.data;
+const { title, image, image2, image3, image4, image_2, image_3, image_4, images, date, description, meta_title } = post.data;
 const { Content } = await render(post);
 const categories = await getTaxonomy(post_folder, "categories");
 const postEntries = await getSinglePage("posts");
@@ -46,10 +46,20 @@ const relatedPosts = similarItems(post, postEntries);
           <article>
             <div class="relative">
               {
-                (image || image_2 || image_3 || image_4 || images?.length) && (
+                (image ||
+                  image2 ||
+                  image3 ||
+                  image4 ||
+                  image_2 ||
+                  image_3 ||
+                  image_4 ||
+                  images?.length) && (
                   <HeroImageCarousel
                     image={image}
                     images={images}
+                    image2={image2}
+                    image3={image3}
+                    image4={image4}
                     image_2={image_2}
                     image_3={image_3}
                     image_4={image_4}

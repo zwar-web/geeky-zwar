@@ -23,29 +23,29 @@
     },
     {
       "name": "image",
-      "label": "Hero image — slide 1",
+      "label": "Hero image (slide 1)",
       "type": "media",
       "value": "",
       "isRequired": true,
       "defaultValue": ""
     },
     {
-      "name": "image_2",
-      "label": "Hero image — slide 2 (optional slideshow)",
+      "name": "image2",
+      "label": "Hero slide 2 — adds slideshow",
       "type": "media",
       "value": "",
       "defaultValue": ""
     },
     {
-      "name": "image_3",
-      "label": "Hero image — slide 3 (optional)",
+      "name": "image3",
+      "label": "Hero slide 3",
       "type": "media",
       "value": "",
       "defaultValue": ""
     },
     {
-      "name": "image_4",
-      "label": "Hero image — slide 4 (optional)",
+      "name": "image4",
+      "label": "Hero slide 4",
       "type": "media",
       "value": "",
       "defaultValue": ""
