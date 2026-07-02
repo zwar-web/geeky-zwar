@@ -8,7 +8,7 @@ banner:
     Event Planning and Scheduling, supported with Discord bots and opeb access
     via the web where discord, FB etc are banned for some players. "
   image_enable: true
-  image: /images/Screenshot from 2026-07-01 17-09-36.png
+  image: /images/z_war_hive_manager_for_dark_war_survival.png
   button:
     enable: true
     label: "Z War Alliance Manager "
