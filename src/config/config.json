@@ -1,7 +1,7 @@
 {
   "site": {
     "title": "Geeky Astro",
-    "base_url": "https://example.com",
+    "base_url": "https://geeky-zwar.vercel.app",
     "base_path": "/",
     "trailing_slash": false,
     "favicon": "/images/favicon.png",

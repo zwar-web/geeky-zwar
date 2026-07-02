@@ -2,3 +2,6 @@ User-agent: *
 Allow: /
 
 Disallow: /api/*
+
+Sitemap: https://geeky-zwar.vercel.app/sitemap-index.xml
+Schemamap: https://geeky-zwar.vercel.app/schemamap.xml

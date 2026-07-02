@@ -11,6 +11,7 @@ import { getTaxonomy } from "@/lib/taxonomyParser.astro";
 import dateFormat from "@/lib/utils/dateFormat";
 import similarItems from "@/lib/utils/similarItems";
 import { markdownify } from "@/lib/utils/textConverter";
+import { buildPostGraph, SITE_URL } from "@/lib/seoGraph";
 import Sidebar from "@/partials/Sidebar.astro";
 import { type CollectionEntry, render } from "astro:content";
 const { post_folder, InnerPaginationOptions } = settings;
@@ -31,14 +32,24 @@ export async function getStaticPaths() {
 }
 
 const { post } = Astro.props;
-const { title, image, image2, image3, image4, image_2, image_3, image_4, images, date, description, meta_title } = post.data;
+const { title, image, image2, image3, image4, image_2, image_3, image_4, images, date, description, meta_title, categories: postCategories } = post.data;
 const { Content } = await render(post);
 const categories = await getTaxonomy(post_folder, "categories");
 const postEntries = await getSinglePage("posts");
 const relatedPosts = similarItems(post, postEntries);
+
+const postUrl = `${SITE_URL}/posts/${post.id}`;
+const graph = buildPostGraph({
+  url: postUrl,
+  title: meta_title ?? title ?? post.id,
+  description: description ?? "",
+  publishDate: date ?? new Date(),
+  categories: postCategories,
+  imageUrl: image ? `${SITE_URL}${image}` : undefined,
+});
 ---
 
-<Base title={title} description={description} meta_title={meta_title}>
+<Base title={title} description={description} meta_title={meta_title} image={image} graph={graph}>
   <section class="section single-blog">
     <div class="container">
       <div class="row">

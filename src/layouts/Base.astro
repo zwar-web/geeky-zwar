@@ -3,11 +3,13 @@ import TwSizeIndicator from "@/components/TwSizeIndicator.astro";
 import config from "@/config/config.json";
 import theme from "@/config/theme.json";
 import { plainify } from "@/lib/utils/textConverter";
+import { SITE_NAME, SITE_URL } from "@/lib/seoGraph";
 import Footer from "@/partials/Footer.astro";
 import Header from "@/partials/Header.astro";
 import "@/styles/main.css";
 import { Font } from "astro:assets";
 import { ClientRouter } from "astro:transitions";
+import Seo from "@jdevalk/astro-seo-graph/Seo.astro";
 
 // font families - extract font names for Font component (filter out type keys)
 const fontEntries = Object.entries(theme.fonts.font_family).filter(
@@ -22,11 +24,22 @@ export interface Props {
   image?: string;
   noindex?: boolean;
   canonical?: string;
+  graph?: Record<string, unknown> | null;
 }
 
 // distructure frontmatters
-const { title, meta_title, description, image, noindex, canonical } =
+const { title, meta_title, description, image, noindex, canonical, graph } =
   Astro.props;
+
+const resolvedTitle = plainify(
+  meta_title ? meta_title : title ? title : config.site.title,
+);
+const resolvedDescription = plainify(
+  description ? description : config.metadata.meta_description,
+);
+const resolvedImage = image
+  ? `${SITE_URL}${image}`
+  : `${SITE_URL}${config.metadata.meta_image}`;
 ---
 
 <!doctype html>
@@ -64,83 +77,32 @@ const { title, meta_title, description, image, noindex, canonical } =
       content="width=device-width, initial-scale=1, maximum-scale=5"
     />
 
-    <!-- title -->
-    <title>
-      {plainify(meta_title ? meta_title : title ? title : config.site.title)}
-    </title>
-
-    <!-- canonical url -->
-    {canonical && <link rel="canonical" href={canonical} item-prop="url" />}
-
-    <!-- noindex robots -->
-    {noindex && <meta name="robots" content="noindex,nofollow" />}
-
-    <!-- meta-description -->
-    <meta
-      name="description"
-      content={plainify(
-        description ? description : config.metadata.meta_description
-      )}
-    />
-
     <ClientRouter />
 
-    <!-- author from config.json -->
-    <meta name="author" content={config.metadata.meta_author} />
-
-    <!-- og-title -->
-    <meta
-      property="og:title"
-      content={plainify(
-        meta_title ? meta_title : title ? title : config.site.title
-      )}
+    <Seo
+      title={resolvedTitle}
+      description={resolvedDescription}
+      canonical={canonical}
+      noindex={noindex}
+      ogType="website"
+      ogImage={resolvedImage}
+      ogImageAlt={resolvedTitle}
+      ogImageWidth={1200}
+      ogImageHeight={675}
+      siteName={SITE_NAME}
+      author={config.metadata.meta_author}
+      twitter={{ card: "summary_large_image" }}
+      graph={graph ?? null}
+      extraLinks={[
+        { rel: "sitemap", href: "/sitemap-index.xml" },
+        {
+          rel: "alternate",
+          type: "application/rss+xml",
+          title: `${SITE_NAME} RSS Feed`,
+          href: "/feed.xml",
+        },
+      ]}
     />
-
-    <!-- og-description -->
-    <meta
-      property="og:description"
-      content={plainify(
-        description ? description : config.metadata.meta_description
-      )}
-    />
-    <meta property="og:type" content="website" />
-    <meta
-      property="og:url"
-      content={`${config.site.base_url}/${Astro.url.pathname.replace("/", "")}`}
-    />
-
-    <!-- twitter-title -->
-    <meta
-      name="twitter:title"
-      content={plainify(
-        meta_title ? meta_title : title ? title : config.site.title
-      )}
-    />
-
-    <!-- twitter-description -->
-    <meta
-      name="twitter:description"
-      content={plainify(
-        description ? description : config.metadata.meta_description
-      )}
-    />
-
-    <!-- og-image -->
-    <meta
-      property="og:image"
-      content={`${config.site.base_url}${
-        image ? image : config.metadata.meta_image
-      }`}
-    />
-
-    <!-- twitter-image -->
-    <meta
-      name="twitter:image"
-      content={`${config.site.base_url}${
-        image ? image : config.metadata.meta_image
-      }`}
-    />
-    <meta name="twitter:card" content="summary_large_image" />
   </head>
   <body>
     <TwSizeIndicator />

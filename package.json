@@ -22,6 +22,8 @@
     "@astrojs/react": "5.0.4",
     "@astrojs/rss": "4.0.18",
     "@astrojs/sitemap": "3.7.2",
+    "@jdevalk/astro-seo-graph": "^2.0.0",
+    "@jdevalk/seo-graph-core": "^0.6.2",
     "@justinribeiro/lite-youtube": "^1.9.0",
     "astro": "6.2.1",
     "astro-auto-import": "^0.5.1",

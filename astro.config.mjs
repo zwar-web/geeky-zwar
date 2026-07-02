@@ -4,8 +4,11 @@ import sitemap from "@astrojs/sitemap";
 import tailwindcss from "@tailwindcss/vite";
 import AutoImport from "astro-auto-import";
 import { defineConfig, fontProviders, sharpImageService } from "astro/config";
+import seoGraph from "@jdevalk/astro-seo-graph/integration";
+import { gitLastmod } from "@jdevalk/astro-seo-graph";
 import config from "./src/config/config.json";
 import theme from "./src/config/theme.json";
+import path from "node:path";
 
 // Helper to parse font string format: "FontName:wght@400;500;600;700"
 function parseFontString(fontStr) {
@@ -54,7 +57,51 @@ export default defineConfig({
   fonts: fontsConfig,
   integrations: [
     react(),
-    sitemap(),
+    sitemap({
+      entryLimit: 1000,
+      chunks: {
+        posts: (item) => {
+          if (/\/posts\/[^/]+/.test(new URL(item.url).pathname)) return item;
+        },
+        categories: (item) => {
+          if (/\/categories\/[^/]+/.test(new URL(item.url).pathname)) return item;
+        },
+      },
+      serialize: async (item) => {
+        // Derive the content file path from the URL for git lastmod
+        const urlPath = new URL(item.url).pathname.replace(/\/$/, "");
+        const segments = urlPath.split("/").filter(Boolean);
+        let filePath = null;
+
+        if (segments[0] === "posts" && segments[1]) {
+          filePath = path.join("src/content/posts", `${segments[1]}.md`);
+        } else if (!segments.length) {
+          filePath = "src/content/homepage/-index.md";
+        }
+
+        if (filePath) {
+          const lastmod = gitLastmod(filePath);
+          if (lastmod) return { ...item, lastmod: lastmod.toISOString() };
+        }
+        return item;
+      },
+    }),
+    seoGraph({
+      markdownAlternate: true,
+      llmsTxt: {
+        title: config.site.title,
+        siteUrl: config.site.base_url,
+        summary: config.metadata.meta_description,
+      },
+      validateMetadataLength: {
+        title: { min: 10, max: 65 },
+        description: { max: 200 },
+      },
+      validateInternalLinks: {
+        skip: (href) =>
+          href.startsWith("/api/") || href === "/search" || href.startsWith("/feed"),
+      },
+    }),
     AutoImport({
       imports: [
         "@/shortcodes/Button",
