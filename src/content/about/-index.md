@@ -1,19 +1,19 @@
 ---
 title: About The Author
-image: /images/author.png
+image: /images/Screenshot from 2026-07-01 17-03-11.png
 meta_title: ""
 description: "meta description"
 education:
   title: Formal Education
   degrees:
-    - university: "Southeast University"
-      content: "1985 • 1991 • gravida nibh velvelit auctor alimo quet menean solli"
-    - university: "Northeast University"
-      content: "1985 • 1991 • gravida nibh velvelit auctor alimo quet menean solli"
-    - university: "Easteast University"
-      content: "1985 • 1991 • gravida nibh velvelit auctor alimo quet menean solli"
-    - university: "Southeast University"
-      content: "1985 • 1991 • gravida nibh velvelit auctor alimo quet menean solli"
+    - university: Southeast University
+      content: 1985 • 1991 • gravida nibh velvelit auctor alimo quet menean solli
+    - university: Northeast University
+      content: 1985 • 1991 • gravida nibh velvelit auctor alimo quet menean solli
+    - university: Easteast University
+      content: 1985 • 1991 • gravida nibh velvelit auctor alimo quet menean solli
+    - university: Southeast University
+      content: 1985 • 1991 • gravida nibh velvelit auctor alimo quet menean solli
 
 experience:
   title: Work Experience
@@ -28,6 +28,7 @@ experience:
     - Best Article
     - Best New Newel
     - Best Book
+draft: true
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi amet, ultrices scelerisue cras. Tincidunt hendrerit egestas venenatis risus sit nunc. Est esglit non in ipsum lect;aaus adipiscing et enim porttitor. Dui ultrices et volud eetpat nunc, turpis rutrum elit vestibululm ipsum. Arcu fringilla duis vitae mos dsdllis duicras interdum purus cursus massa metus. Acc umsan felaais, egsdvet nisi, viverra turpis fermentum sit suspf bafedfb ndisse fermentum consectetur. Facilisis feugiat trisique orci tempor sed masd fbsssa tristique ultrices sodales. Augue est sapien elementum facilisis. Enim tincidnt cras interdum purus ndisse. morbi quis nunc.
