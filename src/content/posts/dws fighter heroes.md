@@ -8,7 +8,7 @@ categories:
   - Fighter Heroes
   - Dark War Survival
 featured: true
-draft: false
+draft: true
 image3: ""
 ---
 # Fighter Faction Heroes
