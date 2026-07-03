@@ -33,7 +33,7 @@ Just before we get into it, be aware, especially if you're new to the game or in
 
 ### _Season 1 Fighter Heroes_&#x20;
 
-_**Guy**_
+#### _**Guy**_
 
 A key hero for the early game is Guy. Initially, he's very strong versus the other heroes you acquire early game. He's a utility hero, though, and his third skill, “Samurai's Gift”, increases energy recovery and food gains from Adventure Camp. This is useful for quite some time, but as I'll cover in other articles, you'll be resetting their first and second skills to 1 to recover the books used for newer, stronger heroes.&#x20;
 
@@ -41,11 +41,11 @@ A key hero for the early game is Guy. Initially, he's very strong versus the oth
 
 ![|Guy, FIghter Hero, Dark War Surival Early Hero](</images/Screenshot from 2026-07-02 14-56-42.png>)
 
-###### **Catherine & Rex**
+#### **Catherine & Rex**
 
 This is where the more experienced players will rue the investment made here after a few seasons. Catherine initially offers a good upgrade. She starts as a Purple hero, and the initial gameplay leads you to buying the upgrade to make her S Class (Gold or Orange, depending on who you speak to!) . If you're a P2P player, its a small investment, much like Guy, but you will discard both of these later. A recent update also removed the useful part of keeping Catherine at Purple level; they moved her Construction 3rd skill to Eddie. I assume this is because many players learned she is a weak hero and didn't upgrade?
 
-###### **Tristan**
+#### **Tristan**
 
 This hero is your first real power upgrade Hero. His 4 battle skills make him a must-have and will introduce the Exclusive Weapons arc. He will be "downgraded when Ella arrives in Season 6. This may temper your rush to level up his Exclusive Weapon, which you can move to another hero with a special token for £50, if you can bear that pain!  His 3rd skill, **Training Expert: Assaulter**, is a fighter-specific upgrade that boosts ATK (through Star Level) and DEF (through skill level).&#x20;
 
@@ -57,7 +57,7 @@ This hero is your first real power upgrade Hero. His 4 battle skills make him a 
 
 Moving through season 2, we get more heroes. The S2 Fighter is Francis;
 
-###### Francis
+#### Francis
 
 a 4-battle skill hero; he'll be a stalwart of any Fighter formation. His 3rd skill is Battle Damage boosts, so damage depletes HP faster and brings a higher kill rate (RIP for PvP and event points).&#x20;
 
@@ -73,7 +73,7 @@ As always, increasing the Star level unlocks higher-level boosts and the ability
 
 Season 3 brings another hero deck, the Fighter, released now is LAN, a counter-attack specialist;
 
-###### LAN
+#### LAN
 
 This is a more complex mix now; LAN brings a counter-attack skill. As a Fighter, this is only effective against Riders (remember the faction triangle?).  So whilst this hero adds to the Fighter formation, she's only effective in certain situations, which is why you will swap her out in certain situations, eg Tyrant. You'll swap her for Darian as his third skill is Troop Damage increase.
 
@@ -89,7 +89,7 @@ Is LAN a good hero? Yes, packs a punch and gets an Exclusive Weapon too; however
 
 Have you noticed a pattern here? Each season brings a new release, a new weapon and a new combination, or formation combo. If you're playing long term, this can affect certain decisions about what to invest in, and maybe what to skip.  So Season 4 brings Noah, a real powerhouse, of course, he gets an Exclusive Weapon too.
 
-###### Noah
+#### Noah
 
 His 3rd skill is where the action is at, **Stand of Protection,** which increases the “Normal Attack Damage taken by troop led reduction” from 5-25%, and the Skill level gives up 35% more damage.&#x20;
 
@@ -101,4 +101,38 @@ His 3rd skill is where the action is at, **Stand of Protection,** which increase
 
 ​
 
-Noah adds some real punch to your fighter crew,&#x20;
+Noah adds some real punch to your fighter crew, and as the pattern is now set, an Exclusive Weapon, **Stormbringer**, stacks power the way these guns do. He is another ever-present in your best Fighter line-ups
+
+​
+
+### Season 5 Fighter&#x20;
+
+So season 5 will bring another batch of heroes, the fighter is Angela, who in the now evolving pattern of new heros, they get stronger each time. This keeps up the need to buy and upgrade. A familiar theme in Dark War Survival.&#x20;
+
+​
+
+![Dark War Survival Season 5 Fighter Hero, Angela](</images/Screenshot from 2026-07-02 14-55-48.png>)
+
+> Angela is a strong all rounder , ever present in the best Fighter line-ups
+
+#### Angela
+
+Angela is another 4 battle skill hero, the key 3rd skill is Fully Armed, Star level gives increased Normal Attack, Counter Attack and Skill damage from 2-10%. Whilst the skill book levels bring increased health by upto 50%.7
+
+​
+
+### Season 6 Fighter&#x20;
+
+Season 6, brings us the usual batch of Heroes, the fighter of which is Ella, shes an instant hit as her bonus skill is more damage!&#x20;
+
+​
+
+![Fighter Hero, Ella](</images/Screenshot from 2026-07-02 15-17-10.png>)
+
+Ella
+
+​
+
+​
+
+​
