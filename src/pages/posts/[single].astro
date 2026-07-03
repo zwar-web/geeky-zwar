@@ -81,6 +81,10 @@ const graph = buildPostGraph({
                   />
                 )
               }
+              <!-- DEBUG-244576 H-A: postCategories={JSON.stringify(postCategories)} allCategories_count={categories.length} -->
+              <div id="debug-244576" style="position:absolute;top:0;left:0;background:red;color:white;font-size:11px;padding:4px;z-index:9999;max-width:100%">
+                POST cats: {JSON.stringify(postCategories)} | ALL cats count: {categories.length}
+              </div>
               <ul class="absolute top-3 left-2 flex flex-wrap items-center">
                 {
                   categories.map((tag) => (
