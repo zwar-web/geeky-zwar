@@ -97,7 +97,7 @@ His 3rd skill is where the action is at, **Stand of Protection,** which increase
 
 ![](</images/Screenshot from 2026-07-03 16-37-12.png>)
 
-​
+> Noah boosts damage done to enemies, but also reduces normal damage taken.  Exclusive Weapon is an essential upgrade for the power hungry...
 
 ​
 
@@ -127,14 +127,20 @@ Season 6, brings us the usual batch of Heroes, the fighter of which is Ella. She
 
 ​
 
-![Fighter Hero, Ella](</images/Screenshot from 2026-07-02 15-17-10.png>)
+![](</images/Screenshot from 2026-07-02 15-17-10.png>)
 
-Ella
+​
+
+> Ella brings a double damage bonus, all source and a fighter specific damage boost...
+
+#### Ella
 
 Ella is another 4-battle skill hero; the key 3rd skill is **Palm Tactics**. Star level gives increased Normal Attack, Counter Attack and Skill damage from 2-10%. Whilst the skill book levels bring increased health by up to 50%.
 
 ​
 
-​
+##### Summary
+
+So that covers the basic hero formation over the 6 seasons. Ella, Angela, Noah, Lan and Francis are the essential 5 fighters for the 35% added “faction damage” boost. I would suggest you experiment with swapping out Lan for Darian, certainly for PvE like Tyrant and Franky, as the Lans 3rd skill is counter-attack, so it only activates when fighting Riders. Darian is general troop damage boost, but this will depend on your Exclusive Weapon and Skill upgrade levels; swapping gear is easy.&#x20;
 
 ​
