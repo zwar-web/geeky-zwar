@@ -8,7 +8,7 @@ categories:
   - Fighter Heroes
   - Dark War Survival
 featured: true
-draft: true
+draft: false
 image3: ""
 ---
 # Fighter Faction Heroes
@@ -51,7 +51,7 @@ This is where the more experienced players will rue the investment made here aft
 
 This hero is your first real power upgrade Hero, 4 battle skills make him a must-have and will introduce the Exclusive Weapons arc. He will be "downgraded when Ella arrives in Season 6. This may temper your rush to level up his Exclusive Weapon, which you can move to another hero with a special token for £50, if you can bear that pain!  His 3rd skill is a fighter-specific upgrade boosting ATK (through Star Level) and DEF through skill level.&#x20;
 
-![Tristan, FIghter, Season 1
+![Tristan, Fighter, Season 1
 ](</images/Screenshot from 2026-07-02 14-56-08.png>)
 
 Season 2 Heros
