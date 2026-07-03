@@ -11,7 +11,6 @@
     "logo_height": "39",
     "logo_text": "Geeky"
   },
-
   "settings": {
     "search": true,
     "sticky_header": false,
@@ -25,13 +24,11 @@
     "summary_length": 200,
     "post_folder": "posts"
   },
-
   "params": {
     "contact_form_action": "#",
     "footer_content": "Lorem ipsum dolor sit amt, conse adip iscing. donec iaculis tempasus laoreet. Libero ullam rgscper.",
-    "copyright": "Designed and Developed By [Statichunt](https://statichunt.com/)"
+    "copyright": "Designed and Developed By Wonky Hat LLC (C) 2026"
   },
-
   "widgets": {
     "about": {
       "enable": true,
@@ -59,15 +56,13 @@
     "label": "Get Started",
     "link": "https://example.com"
   },
-
   "metadata": {
     "meta_author": "statichunt",
     "meta_image": "/images/og-image.png",
     "meta_description": "astro and tailwind boilerplate"
   },
-
   "disqus": {
-    "enable": true,
+    "enable": false,
     "shortname": "themefisher-template",
     "settings": {}
   }
