@@ -8,7 +8,7 @@ categories:
   - Fighter Heroes
   - Dark War Survival
 featured: true
-draft: false
+draft: true
 image3: ""
 ---
 # Fighter Faction Heroes
@@ -31,10 +31,6 @@ Just before we get into it, be aware, especially if you're new to the game or in
 
 > Low budget or F2P can skip making Catherine gold, longer term shes barely a filler Hero. Guy at least adds some good power for the early game and is usually a cheap pickup too.&#x20;
 
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo vel ad consectetur ut aperiam. Itaque eligendi natus aperiam? Excepturi repellendus consequatur quibusdam optio expedita praesentium est adipisci dolorem ut eius!
-
-_Example Caption_
-
 ### _Season 1 Fighter Heroes_&#x20;
 
 _**Guy**_
@@ -53,8 +49,9 @@ This is where the more experienced players will rue the investment made here aft
 
 This hero is your first real power upgrade Hero. His 4 battle skills make him a must-have and will introduce the Exclusive Weapons arc. He will be "downgraded when Ella arrives in Season 6. This may temper your rush to level up his Exclusive Weapon, which you can move to another hero with a special token for £50, if you can bear that pain!  His 3rd skill, **Training Expert: Assaulter**, is a fighter-specific upgrade that boosts ATK (through Star Level) and DEF (through skill level).&#x20;
 
-![Tristan, Fighter, Season 1 \_ First Hero to Get Exclusive Weaponry
-](</images/Screenshot from 2026-07-02 14-56-08.png>)
+​
+
+![](</images/Screenshot from 2026-07-02 14-56-08.png>)
 
 ### Season 2 Fighter Heroes
 
@@ -69,10 +66,8 @@ a 4-battle skill hero; he'll be a stalwart of any Fighter formation. His 3rd ski
 ![Dark War Survival, Season 2, Fighter; Francis](/images/Francs_S2_Fighter.png)
 
 > Francis brings more battle damage, an exclusive weapon and becomes a long term Fighter formation must-have
->
-> ​
 
-As always, increasing the Star level of Francis unlocks the higher-level boosts and the ability to upsill with training books. His 3rd skill, **Heart of Steel**,  increases Fighter Battle damage 5-25% through Star levels, whilst increasing his skill level increases Fighter HP by up to 25%. &#x20;
+As always, increasing the Star level unlocks higher-level boosts and the ability to upskill with training books. His 3rd skill, **Heart of Steel**,  increases Fighter Battle damage by 5- 25% through Star levels, whilst increasing his skill level increases Fighter HP by up to 25%. &#x20;
 
 ### Season 3 Fighter
 
@@ -87,20 +82,16 @@ This is a more complex mix now; LAN brings a counter-attack skill. As a Fighter,
 ![Dark War Survival, Season 3 Fighter; LAN](</images/Screenshot from 2026-07-03 16-36-27.png>)
 
 > LAN, a counter attack focused hero, strong but only truly effective vs RIders.
->
-> ​
 
-Is LAN a good hero? Yes, packs a punch, gets an Exlusive Weapon too, however, the 3rd skill, **Killer Instinct,** has its limits as its only effective vs Riders, it has no impact on other Factions. This is why you can swap out for Franky and Tyrant with say, Darian, whos 3rd skill still boosts damage for all troop types. Indeed maybe effective in PVP situations.&#x20;
-
-​
+Is LAN a good hero? Yes, packs a punch and gets an Exclusive Weapon too; however, the 3rd skill, Killer Instinct, has its limits as it's only effective vs Riders; it has no impact on other Factions. This is why you can swap out for Franky and Tyrant events with, say, Darian, whose 3rd skill still boosts damage for all troop types. Indeed, maybe effective in PVP situations.
 
 ### Season 4 Fighter&#x20;
 
-Have you noticed a pattern here? Each season brings a new release, a new weapon and a new combination, or formation combo. If youre playing long term, this can affect certain decisions about what to invest in , and maybe what to skip.  So Season 4 brings Noah, a real powerhouse, of course he gets an Exclusive Weapon too.
+Have you noticed a pattern here? Each season brings a new release, a new weapon and a new combination, or formation combo. If you're playing long term, this can affect certain decisions about what to invest in, and maybe what to skip.  So Season 4 brings Noah, a real powerhouse, of course, he gets an Exclusive Weapon too.
 
 ###### Noah
 
-His 3rd skill is where the action is at, **Stand of Protection,** which increases the “Normal Attack Damage taken by troop led reduction” from 5-25% and the Skill level gives up 35% more damage.&#x20;
+His 3rd skill is where the action is at, **Stand of Protection,** which increases the “Normal Attack Damage taken by troop led reduction” from 5-25%, and the Skill level gives up 35% more damage.&#x20;
 
 ​
 
