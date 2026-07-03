@@ -6,6 +6,7 @@ image2: ""
 categories:
   - Heroes
   - Fighter Heroes
+  - Dark War Survival
 featured: true
 draft: false
 image3: ""
