@@ -19,7 +19,7 @@ For the newcomers, its important to understand the often used “tic-tac-toe” 
 
 ![Dark War Survival Faction Counter ](</images/Screenshot from 2026-07-02 14-23-03.png>)
 
-> Fighter Faction Counter & Countered Infographic
+> Fighter Faction Counter & Countered By
 
 Hero SKills
 
