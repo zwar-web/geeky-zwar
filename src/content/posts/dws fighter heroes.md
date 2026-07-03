@@ -8,7 +8,7 @@ categories:
   - Fighter Heroes
   - Dark War Survival
 featured: true
-draft: true
+draft: false
 image3: ""
 ---
 # Fighter Faction Heroes
@@ -107,7 +107,7 @@ Noah adds some real punch to your fighter crew, and as the pattern is now set, a
 
 ### Season 5 Fighter&#x20;
 
-So season 5 will bring another batch of heroes, the fighter is Angela, who in the now evolving pattern of new heros, they get stronger each time. This keeps up the need to buy and upgrade. A familiar theme in Dark War Survival.&#x20;
+So season 5 will bring another batch of heroes, the fighter is **Angela**, who, in the now evolving pattern of new heroes, get stronger each time. This keeps up the need to buy and upgrade. A familiar theme in Dark War Survival.&#x20;
 
 ​
 
@@ -117,19 +117,21 @@ So season 5 will bring another batch of heroes, the fighter is Angela, who in th
 
 #### Angela
 
-Angela is another 4 battle skill hero, the key 3rd skill is Fully Armed, Star level gives increased Normal Attack, Counter Attack and Skill damage from 2-10%. Whilst the skill book levels bring increased health by upto 50%.7
+Angela is another 4-battle skill hero; the key 3rd skill is **Fully Armed**. Star level gives increased Normal Attack, Counter Attack and Skill damage from 2-10%. Whilst the skill book levels bring increased health by up to 50%.7
 
 ​
 
 ### Season 6 Fighter&#x20;
 
-Season 6, brings us the usual batch of Heroes, the fighter of which is Ella, shes an instant hit as her bonus skill is more damage!&#x20;
+Season 6, brings us the usual batch of Heroes, the fighter of which is Ella. She's an instant hit as her bonus skill is more damage!&#x20;
 
 ​
 
 ![Fighter Hero, Ella](</images/Screenshot from 2026-07-02 15-17-10.png>)
 
 Ella
+
+Ella is another 4-battle skill hero; the key 3rd skill is **Palm Tactics**. Star level gives increased Normal Attack, Counter Attack and Skill damage from 2-10%. Whilst the skill book levels bring increased health by up to 50%.
 
 ​
 
