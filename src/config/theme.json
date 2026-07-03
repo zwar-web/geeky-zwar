@@ -10,7 +10,7 @@
       },
       "text_color": {
         "text": "#281912",
-        "text-dark": "#281912",
+        "text-dark": "#a8784a",
         "text-light": "#a8784a"
       }
     },
@@ -24,7 +24,7 @@
       },
       "text_color": {
         "text": "#dfdfe1",
-        "text-dark": "#dfdfe1",
+        "text-dark": "#a8784a",
         "text-light": "#a8784a"
       }
     }
