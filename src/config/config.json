@@ -7,8 +7,10 @@
     "favicon": "/images/favicon.png",
     "logo": "/images/logo.png",
     "logo_darkmode": "/images/logo-darkmode.png",
-    "logo_width": "150",
-    "logo_height": "39",
+    "logo_width": "43",
+    "logo_height": "43",
+    "logo_wordmark": "Z-War",
+    "logo_wordmark_color": "#C8860A",
     "logo_text": "Geeky"
   },
   "settings": {

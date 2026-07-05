@@ -10,6 +10,8 @@ const {
   logo_width,
   logo_height,
   logo_text,
+  logo_wordmark,
+  logo_wordmark_color,
   title,
 }: {
   logo: string;
@@ -17,13 +19,16 @@ const {
   logo_width: any;
   logo_height: any;
   logo_text: string;
+  logo_wordmark: string;
+  logo_wordmark_color: string;
   title: string;
 } = config.site;
 
 const { theme_switcher }: { theme_switcher: boolean } = config.settings;
+const markLabel = logo_wordmark || logo_text || title;
 ---
 
-<a href="/" class="navbar-brand inline-block">
+<a href="/" class="navbar-brand app-header-logo-mark inline-flex items-center gap-1.5">
   {
     src || srcDarkmode || logo || logo_darkmode ? (
       <>
@@ -32,7 +37,7 @@ const { theme_switcher }: { theme_switcher: boolean } = config.settings;
           class={`inline-block ${theme_switcher && "dark:hidden"}`}
           width={logo_width.replace("px", "") * 2}
           height={logo_height.replace("px", "") * 2}
-          alt={title}
+          alt=""
           style={{
             height: logo_height.replace("px", "") + "px",
             width: logo_width.replace("px", "") + "px",
@@ -48,7 +53,7 @@ const { theme_switcher }: { theme_switcher: boolean } = config.settings;
             class={"hidden dark:inline-block"}
             width={logo_width.replace("px", "") * 2}
             height={logo_height.replace("px", "") * 2}
-            alt={title}
+            alt=""
             style={{
               height: logo_height.replace("px", "") + "px",
               width: logo_width.replace("px", "") + "px",
@@ -59,9 +64,21 @@ const { theme_switcher }: { theme_switcher: boolean } = config.settings;
             loading="eager"
           />
         )}
+        <span
+          class="app-header-logo-wordmark font-secondary leading-none whitespace-nowrap"
+          style={{ color: logo_wordmark_color }}
+          aria-hidden="true"
+        >
+          {markLabel}
+        </span>
       </>
-    ) : logo_text ? (
-      logo_text
+    ) : markLabel ? (
+      <span
+        class="app-header-logo-wordmark font-secondary leading-none whitespace-nowrap"
+        style={{ color: logo_wordmark_color }}
+      >
+        {markLabel}
+      </span>
     ) : (
       title
     )
