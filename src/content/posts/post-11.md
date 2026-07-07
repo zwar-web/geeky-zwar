@@ -1,5 +1,5 @@
 ---
-title: "Z War World & Season Maps"
+title: "Z War World and Season Maps"
 date: 2026-04-02T11:00:00.000Z
 image: /images/dws-zwar-season-six-map.png
 categories:
