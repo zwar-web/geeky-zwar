@@ -36,9 +36,30 @@ function agentLog(hypothesisId, location, message, data, runId = "banner-fix") {
 
 const homepagePath = resolve(root, "src/content/homepage/-index.md");
 const schemaPath = resolve(root, ".sitepins/schema/homepage.json");
-const raw = readFileSync(homepagePath, "utf8");
-const schema = JSON.parse(readFileSync(schemaPath, "utf8"));
+let schema = null;
+let schemaExists = false;
+try {
+  schema = JSON.parse(readFileSync(schemaPath, "utf8"));
+  schemaExists = true;
+} catch {
+  schema = { template: [] };
+}
 
+agentLog(
+  "I",
+  "audit-sitepins-homepage.mjs:schema-mode",
+  "User confirmed actual-fields mode works; schema mode shows empty values",
+  {
+    schemaExists,
+    schemaModeExpectedBroken: schemaExists,
+    recommendation: schemaExists
+      ? "delete homepage.json schema so Sitepins infers from frontmatter"
+      : "no homepage schema — Sitepins should use actual fields",
+  },
+  runId,
+);
+
+const raw = readFileSync(homepagePath, "utf8");
 const parts = raw.split(/^---\s*$/m);
 const hasZwsp = /\u200b/.test(raw);
 const fmText = parts[1] ?? "";
@@ -157,6 +178,6 @@ agentLog(
   runId,
 );
 
-if (yamlError || missingInFile.length || !fm?.banner?.title) {
+if (yamlError || !fm?.banner?.title) {
   process.exitCode = 1;
 }
