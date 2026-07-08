@@ -1,5 +1,5 @@
 {
-  "file": "src/content/posts/post-1.md",
+  "file": "src/content/posts/dws-territory-map-planner.md",
   "name": "posts",
   "fileType": "md",
   "fmType": "yaml",
@@ -22,7 +22,7 @@
     {
       "name": "description",
       "label": "Meta description",
-      "type": "string",
+      "type": "textarea",
       "value": "",
       "defaultValue": ""
     },
