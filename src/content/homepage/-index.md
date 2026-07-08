@@ -1,6 +1,7 @@
 ---
 meta_title: "Z War Alliance Manager"
-description: "Z War alliance manager for Dark War Survival — guides, hive and territory management, event planning, and scheduling for alliance leaders."
+description: "Z War alliance manager for Dark War Survival — guides, hive and
+  territory management, event planning, and scheduling for alliance leaders."
 banner:
   title: "**Z War** Alliance Manager Tool **!**"
   title_small: The Perfect Partner for Dark War Survival Alliance Leaders
@@ -10,7 +11,7 @@ banner:
     Event Planning and Scheduling, supported with Discord bots and opeb access
     via the web where discord, FB etc are banned for some players. "
   image_enable: true
-  image: /images/Screenshot from 2026-07-01 17-09-36.png
+  image: /images/dws_hive_quadrant_optimal.png
   button:
     enable: true
     label: "Z War Alliance Manager "
@@ -30,3 +31,4 @@ recent_posts:
   title: Recent Posts
   enable: true
 ---
+​
