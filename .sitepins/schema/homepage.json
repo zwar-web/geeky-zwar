@@ -61,27 +61,6 @@
           "defaultValue": ""
         },
         {
-          "name": "image2",
-          "label": "Banner slide 2 — adds slideshow",
-          "type": "media",
-          "value": "",
-          "defaultValue": ""
-        },
-        {
-          "name": "image3",
-          "label": "Banner slide 3",
-          "type": "media",
-          "value": "",
-          "defaultValue": ""
-        },
-        {
-          "name": "image4",
-          "label": "Banner slide 4",
-          "type": "media",
-          "value": "",
-          "defaultValue": ""
-        },
-        {
           "name": "button",
           "label": "Button",
           "type": "Object",

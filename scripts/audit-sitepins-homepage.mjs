@@ -9,8 +9,9 @@ const root = resolve(__dirname, "..");
 const logEndpoint =
   "http://127.0.0.1:7632/ingest/bdfd55f9-3407-4cb7-9449-4c3f11b9cc2e";
 const sessionId = "043891";
+const runId = process.env.RUN_ID || "banner-fix";
 
-function agentLog(hypothesisId, location, message, data, runId = "pre-fix") {
+function agentLog(hypothesisId, location, message, data, runId = "banner-fix") {
   const payload = {
     sessionId,
     runId,
@@ -85,12 +86,76 @@ agentLog("D", "audit-sitepins-homepage.mjs:object-defaults", "Object fields with
   count: objectBadDefaults.length,
 });
 
-agentLog("E", "audit-sitepins-homepage.mjs:banner-values", "Banner nested values present in file", {
-  bannerKeys: fm?.banner ? Object.keys(fm.banner) : [],
-  hasBannerTitle: Boolean(fm?.banner?.title),
-  hasBannerImage: Boolean(fm?.banner?.image),
-  buttonEnable: fm?.banner?.button?.enable ?? null,
-});
+const bannerSchema = schema.template.find((f) => f.name === "banner");
+const bannerSchemaFields = bannerSchema?.template?.map((f) => f.name) ?? [];
+const bannerFileKeys = fm?.banner ? Object.keys(fm.banner) : [];
+const emptyMediaInBanner = ["image2", "image3", "image4"].filter(
+  (k) => fm?.banner && k in fm.banner && fm.banner[k] === "",
+);
+const missingBannerSchemaFields = bannerSchemaFields.filter(
+  (k) => !bannerFileKeys.includes(k),
+);
+const extraBannerFileFields = bannerFileKeys.filter(
+  (k) => !bannerSchemaFields.includes(k),
+);
+
+agentLog(
+  "F",
+  "audit-sitepins-homepage.mjs:empty-media",
+  "Empty-string media keys in banner frontmatter",
+  {
+    emptyMediaInBanner,
+    image2Value: fm?.banner?.image2 ?? null,
+    image3Value: fm?.banner?.image3 ?? null,
+    image4Value: fm?.banner?.image4 ?? null,
+  },
+  runId,
+);
+
+agentLog(
+  "G",
+  "audit-sitepins-homepage.mjs:banner-schema-parity",
+  "Banner schema fields vs file keys",
+  {
+    bannerSchemaFields,
+    bannerFileKeys,
+    missingBannerSchemaFields,
+    extraBannerFileFields,
+    matches7758e60Shape:
+      extraBannerFileFields.length === 0 &&
+      emptyMediaInBanner.length === 0 &&
+      Boolean(fm?.banner?.title),
+  },
+  runId,
+);
+
+agentLog(
+  "H",
+  "audit-sitepins-homepage.mjs:seo-key",
+  "SEO field key uses meta_description not legacy description",
+  {
+    hasMetaDescription: "meta_description" in (fm ?? {}),
+    hasLegacyDescription: "description" in (fm ?? {}),
+    schemaSeoField:
+      schema.template.find((f) =>
+        ["meta_description", "description"].includes(f.name),
+      )?.name ?? null,
+  },
+  runId,
+);
+
+agentLog(
+  "E",
+  "audit-sitepins-homepage.mjs:banner-values",
+  "Banner nested values present in file",
+  {
+    bannerKeys: fm?.banner ? Object.keys(fm.banner) : [],
+    hasBannerTitle: Boolean(fm?.banner?.title),
+    hasBannerImage: Boolean(fm?.banner?.image),
+    buttonEnable: fm?.banner?.button?.enable ?? null,
+  },
+  runId,
+);
 
 if (yamlError || missingInFile.length || !fm?.banner?.title) {
   process.exitCode = 1;
