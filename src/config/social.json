@@ -19,11 +19,7 @@
       "name": "Discord",
       "icon": "FaDiscord",
       "link": "https://discord.gg/EKtuh65A8v"
-    },
-    {
-      "name": "linkedin",
-      "icon": "FaLinkedin",
-      "link": "https://www.linkedin.com/"
     }
-  ]
+  ],
+  "draft": false
 }
