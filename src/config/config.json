@@ -4,14 +4,14 @@
     "base_url": "https://geeky-zwar.vercel.app",
     "base_path": "/",
     "trailing_slash": false,
-    "favicon": "/images/favicon.png",
+    "favicon": "/images/design-43d18f82-74e7-4472-9c4c-bb500066dcab.png",
     "logo": "/images/logo.png",
     "logo_darkmode": "/images/logo-darkmode.png",
     "logo_width": "43",
     "logo_height": "43",
     "logo_wordmark": "Z-War",
     "logo_wordmark_color": "#C8860A",
-    "logo_text": "Geeky"
+    "logo_text": "Z War "
   },
   "settings": {
     "search": true,
