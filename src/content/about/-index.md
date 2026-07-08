@@ -5,7 +5,7 @@ image2: ""
 image3: ""
 image4: ""
 meta_title: ""
-description: ""
+meta_description: ""
 education:
   title: Formal Education
   degrees:

@@ -12,7 +12,7 @@
       "defaultValue": ""
     },
     {
-      "name": "description",
+      "name": "meta_description",
       "label": "Meta description",
       "type": "string",
       "value": "",
@@ -58,7 +58,30 @@
       "label": "Social links",
       "type": "Array",
       "value": [],
-      "defaultValue": ""
+      "defaultValue": "",
+      "template": [
+        {
+          "name": "icon",
+          "label": "Icon",
+          "type": "string",
+          "value": "",
+          "defaultValue": ""
+        },
+        {
+          "name": "content",
+          "label": "Content",
+          "type": "string",
+          "value": "",
+          "defaultValue": ""
+        },
+        {
+          "name": "link",
+          "label": "Link",
+          "type": "string",
+          "value": "",
+          "defaultValue": ""
+        }
+      ]
     },
     {
       "name": "draft",

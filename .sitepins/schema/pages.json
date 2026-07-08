@@ -1,7 +1,7 @@
 {
-  "file": "src/content/pages/privacy-policy.md",
+  "file": "src/content/pages/elements.mdx",
   "name": "pages",
-  "fileType": "md",
+  "fileType": "mdx",
   "fmType": "yaml",
   "template": [
     {
@@ -20,7 +20,7 @@
       "defaultValue": ""
     },
     {
-      "name": "description",
+      "name": "meta_description",
       "label": "Meta description",
       "type": "string",
       "value": "",

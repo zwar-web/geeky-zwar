@@ -1,7 +1,4 @@
 ---
-meta_title: "Z War Alliance Manager"
-description: "Z War alliance manager for Dark War Survival — guides, hive and
-  territory management, event planning, and scheduling for alliance leaders."
 banner:
   title: "**Z War** Alliance Manager Tool **!**"
   title_small: The Perfect Partner for Dark War Survival Alliance Leaders

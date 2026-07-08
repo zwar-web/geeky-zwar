@@ -18,8 +18,7 @@ const homepage = (await getEntry(
   "-index"
 )) as CollectionEntry<"homepage">;
 
-const { banner, featured_posts, promotion, recent_posts, meta_title, description } =
-  homepage.data;
+const { banner, featured_posts, promotion, recent_posts } = homepage.data;
 const posts = await getCollection(
   "posts",
   ({ data, id }) => !id.startsWith("-") && !data.draft
@@ -28,7 +27,7 @@ const sortedPost: CollectionEntry<"posts">[] = sortByDate(posts);
 const featuredPosts = posts.filter((post) => post.data.featured);
 ---
 
-<Base meta_title={meta_title} description={description}>
+<Base>
   {/* Banner */}
   <section class="section banner relative pb-0">
     <Image

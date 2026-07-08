@@ -1,7 +1,7 @@
 ---
 title: "Dakr War Survival Season 6 "
 meta_title: ""
-description: ""
+meta_description: ""
 date: 2026-07-08T15:00:00.000Z
 image: /images/post/post-5.png
 image2: ""

@@ -20,7 +20,7 @@
       "defaultValue": ""
     },
     {
-      "name": "description",
+      "name": "meta_description",
       "label": "Meta description",
       "type": "string",
       "value": "",

@@ -16,14 +16,14 @@ export async function getStaticPaths() {
 }
 
 const { page } = Astro.props;
-const { title, meta_title, description, image } = page.data;
+const { title, meta_title, meta_description, description, image } = page.data;
 const { Content } = await render(page);
 ---
 
 <Base
   title={title}
   meta_title={meta_title}
-  description={description}
+  meta_description={meta_description ?? description}
   image={image}>
   <section class="section">
     <div class="container">

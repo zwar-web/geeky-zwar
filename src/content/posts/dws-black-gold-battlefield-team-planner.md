@@ -1,7 +1,7 @@
 ---
 title: "Dark War Black Gold Battlefield Planner"
 meta_title: ""
-description: ""
+meta_description: ""
 date: 2026-04-03T12:00:00.000Z
 image: /images/dark-war- bgb- planner.png
 image2: ""

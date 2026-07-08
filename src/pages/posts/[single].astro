@@ -32,7 +32,7 @@ export async function getStaticPaths() {
 }
 
 const { post } = Astro.props;
-const { title, image, image2, image3, image4, image_2, image_3, image_4, images, date, description, meta_title, categories: postCategories } = post.data;
+const { title, image, image2, image3, image4, image_2, image_3, image_4, images, date, meta_description, description, meta_title, categories: postCategories } = post.data;
 const { Content } = await render(post);
 const categories = await getTaxonomy(post_folder, "categories");
 const postEntries = await getSinglePage("posts");
@@ -42,14 +42,14 @@ const postUrl = `${SITE_URL}/posts/${post.id}`;
 const graph = buildPostGraph({
   url: postUrl,
   title: meta_title ?? title ?? post.id,
-  description: description ?? "",
+  description: meta_description ?? description ?? "",
   publishDate: date ?? new Date(),
   categories: postCategories,
   imageUrl: image ? `${SITE_URL}${image}` : undefined,
 });
 ---
 
-<Base title={title} description={description} meta_title={meta_title} image={image} graph={graph}>
+<Base title={title} meta_description={meta_description ?? description} meta_title={meta_title} image={image} graph={graph}>
   <section class="section single-blog">
     <div class="container">
       <div class="row">

@@ -21,7 +21,7 @@ export const GET = createMarkdownEndpoint({
             title: post.data.meta_title ?? post.data.title ?? post.id,
             canonical: `${SITE_URL}/posts/${post.id}`,
             pubDate: post.data.date,
-            description: post.data.description,
+            description: post.data.meta_description ?? post.data.description,
             categories: post.data.categories,
           },
           body: post.body ?? "",

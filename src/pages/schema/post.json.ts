@@ -9,7 +9,7 @@ export const GET = createSchemaEndpoint({
   mapper: (post) => {
     const url = `${SITE_URL}/posts/${post.id}`;
     const title = post.data.meta_title ?? post.data.title ?? post.id;
-    const description = post.data.description ?? "";
+    const description = post.data.meta_description ?? post.data.description ?? "";
     const publishDate = post.data.date ?? new Date();
 
     return [

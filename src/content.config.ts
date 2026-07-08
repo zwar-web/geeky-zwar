@@ -17,6 +17,7 @@ const aboutCollection = defineCollection({
     image_3: z.string().optional(),
     image_4: z.string().optional(),
     meta_title: z.string().optional(),
+    meta_description: z.string().optional(),
     description: z.string().optional(),
     education: z.object({
       title: z.string().optional(),
@@ -35,6 +36,7 @@ const contactCollection = defineCollection({
   loader: glob({ pattern: "**/*.{md,mdx}", base: "src/content/contact" }),
   schema: z.object({
     title: z.string().optional(),
+    meta_description: z.string().optional(),
     description: z.string().optional(),
     meta_title: z.string().optional(),
     phone: z.string().optional(),
@@ -55,8 +57,6 @@ const contactCollection = defineCollection({
 const homepageCollection = defineCollection({
   loader: glob({ pattern: "**/*.{md,mdx}", base: "src/content/homepage" }),
   schema: z.object({
-    meta_title: z.string().optional(),
-    description: z.string().optional(),
     banner: z.object({
       title: z.string(),
       title_small: z.string(),
@@ -94,6 +94,7 @@ const pagesCollection = defineCollection({
   schema: z.object({
     title: z.string().optional(),
     meta_title: z.string().optional(),
+    meta_description: z.string().optional(),
     description: z.string().optional(),
     draft: z.boolean(),
   }),
@@ -104,6 +105,7 @@ const postsCollection = defineCollection({
   schema: z.object({
     title: z.string().optional(),
     meta_title: z.string().optional(),
+    meta_description: z.string().optional(),
     description: z.string().optional(),
     date: z.coerce.date().optional(),
     image: z.string().optional(),

@@ -26,7 +26,7 @@ export async function GET(context: APIContext) {
 
       return {
         title: post.data.title ?? post.id,
-        description: post.data.description ?? "",
+        description: post.data.meta_description ?? post.data.description ?? "",
         pubDate: post.data.date ?? new Date(),
         link: postUrl,
         ...(imageUrl && {

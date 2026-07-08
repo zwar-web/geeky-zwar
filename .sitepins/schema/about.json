@@ -47,7 +47,7 @@
       "defaultValue": ""
     },
     {
-      "name": "description",
+      "name": "meta_description",
       "label": "Meta description",
       "type": "string",
       "value": "",
@@ -72,7 +72,23 @@
           "label": "Degrees",
           "type": "Array",
           "value": [],
-          "defaultValue": ""
+          "defaultValue": "",
+          "template": [
+            {
+              "name": "university",
+              "label": "University",
+              "type": "string",
+              "value": "",
+              "defaultValue": ""
+            },
+            {
+              "name": "content",
+              "label": "Content",
+              "type": "string",
+              "value": "",
+              "defaultValue": ""
+            }
+          ]
         }
       ]
     },

@@ -13,10 +13,10 @@ const contact = (await getEntry(
 )) as CollectionEntry<"contact">;
 
 const { contact_form_action }: { contact_form_action: string } = config.params;
-const { title, social_links, meta_title, description } = contact.data;
+const { title, social_links, meta_title, meta_description, description } = contact.data;
 ---
 
-<Base title={title} meta_title={meta_title} description={description}>
+<Base title={title} meta_title={meta_title} meta_description={meta_description ?? description}>
   <section class="section">
     <div class="container">
       <div class="row relative pb-16">

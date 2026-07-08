@@ -7,11 +7,11 @@ import { getEntry, render } from "astro:content";
 
 const about = (await getEntry("about", "-index")) as CollectionEntry<"about">;
 const { Content } = await render(about);
-const { title, image, image2, image3, image4, image_2, image_3, image_4, images, education, experience, description, meta_title } =
+const { title, image, image2, image3, image4, image_2, image_3, image_4, images, education, experience, meta_description, description, meta_title } =
   about.data;
 ---
 
-<Base title={title} meta_title={meta_title} description={description}>
+<Base title={title} meta_title={meta_title} meta_description={meta_description ?? description}>
   <section class="section">
     <div class="container text-center">
       {

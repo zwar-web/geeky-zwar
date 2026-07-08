@@ -20,6 +20,7 @@ const fontEntries = Object.entries(theme.fonts.font_family).filter(
 export interface Props {
   title?: string;
   meta_title?: string;
+  meta_description?: string;
   description?: string;
   image?: string;
   noindex?: boolean;
@@ -28,14 +29,14 @@ export interface Props {
 }
 
 // distructure frontmatters
-const { title, meta_title, description, image, noindex, canonical, graph } =
+const { title, meta_title, meta_description, description, image, noindex, canonical, graph } =
   Astro.props;
 
 const resolvedTitle = plainify(
   meta_title ? meta_title : title ? title : config.site.title,
 );
 const resolvedDescription = plainify(
-  description ? description : config.metadata.meta_description,
+  meta_description || description || config.metadata.meta_description,
 );
 const resolvedImage = image
   ? `${SITE_URL}${image}`
