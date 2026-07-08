@@ -1,5 +1,7 @@
 ---
 title: "Dark War Fighter Heroes "
+meta_title: ""
+description: ""
 date: 2026-04-04T01:00:00.000Z
 image: /images/fighter_hero_group.png
 image2: ""

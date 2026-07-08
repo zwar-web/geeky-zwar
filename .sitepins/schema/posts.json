@@ -22,7 +22,7 @@
     {
       "name": "description",
       "label": "Meta description",
-      "type": "textarea",
+      "type": "string",
       "value": "",
       "defaultValue": ""
     },

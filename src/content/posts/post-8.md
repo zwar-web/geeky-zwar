@@ -1,5 +1,7 @@
 ---
 title: "Drone Software and Development"
+meta_title: ""
+description: ""
 date: 2026-04-04T08:00:00Z
 image: /images/post/post-8.png
 categories: ["Territory Tools"]

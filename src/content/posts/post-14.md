@@ -1,5 +1,7 @@
 ---
 title: "What you need to know about Programming"
+meta_title: ""
+description: ""
 date: 2026-04-04T14:00:00Z
 image: /images/post/post-6.png
 categories: ["Territory Tools"]

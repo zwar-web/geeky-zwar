@@ -1,5 +1,7 @@
 ---
 title: "Artificial Intelligence and Robotics In A Nutshell"
+meta_title: ""
+description: ""
 date: 2026-04-04T07:00:00Z
 image: /images/post/post-7.png
 categories: ["Hive Layouts"]
