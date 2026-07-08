@@ -2,7 +2,7 @@
 title: About The Author
 image: /images/Screenshot from 2026-07-01 17-03-11.png
 meta_title: ""
-description: "meta description"
+description: ""
 education:
   title: Formal Education
   degrees:

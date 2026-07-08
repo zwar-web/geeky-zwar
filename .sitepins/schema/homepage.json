@@ -5,6 +5,20 @@
   "fmType": "yaml",
   "template": [
     {
+      "name": "meta_title",
+      "label": "Meta title",
+      "type": "string",
+      "value": "",
+      "defaultValue": ""
+    },
+    {
+      "name": "description",
+      "label": "Meta description",
+      "type": "string",
+      "value": "",
+      "defaultValue": ""
+    },
+    {
       "name": "banner",
       "label": "Homepage banner",
       "type": "Object",

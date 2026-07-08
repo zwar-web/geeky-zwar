@@ -13,6 +13,20 @@
       "defaultValue": ""
     },
     {
+      "name": "meta_title",
+      "label": "Meta title",
+      "type": "string",
+      "value": "",
+      "defaultValue": ""
+    },
+    {
+      "name": "description",
+      "label": "Meta description",
+      "type": "string",
+      "value": "",
+      "defaultValue": ""
+    },
+    {
       "name": "date",
       "label": "Date",
       "type": "Date",

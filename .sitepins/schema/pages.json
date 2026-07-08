@@ -21,7 +21,7 @@
     },
     {
       "name": "description",
-      "label": "Description",
+      "label": "Meta description",
       "type": "string",
       "value": "",
       "defaultValue": ""
