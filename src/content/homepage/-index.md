@@ -12,6 +12,9 @@ banner:
     via the web where discord, FB etc are banned for some players. "
   image_enable: true
   image: /images/dws_hive_quadrant_optimal.png
+  image2: ""
+  image3: ""
+  image4: ""
   button:
     enable: true
     label: "Z War Alliance Manager "

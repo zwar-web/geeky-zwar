@@ -4,6 +4,9 @@ meta_title: ""
 description: ""
 date: 2026-04-04T04:00:00Z
 image: /images/post/post-4.png
+image2: ""
+image3: ""
+image4: ""
 categories: ["Hero Gear"]
 featured: false
 draft: false

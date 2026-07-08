@@ -52,6 +52,59 @@
       "type": "string",
       "value": "",
       "defaultValue": ""
+    },
+    {
+      "name": "education",
+      "label": "Education",
+      "type": "Object",
+      "value": {},
+      "defaultValue": "",
+      "template": [
+        {
+          "name": "title",
+          "label": "Title",
+          "type": "string",
+          "value": "",
+          "defaultValue": ""
+        },
+        {
+          "name": "degrees",
+          "label": "Degrees",
+          "type": "Array",
+          "value": [],
+          "defaultValue": ""
+        }
+      ]
+    },
+    {
+      "name": "experience",
+      "label": "Experience",
+      "type": "Object",
+      "value": {},
+      "defaultValue": "",
+      "template": [
+        {
+          "name": "title",
+          "label": "Title",
+          "type": "string",
+          "value": "",
+          "defaultValue": ""
+        },
+        {
+          "name": "list",
+          "label": "List",
+          "type": "Array",
+          "value": [],
+          "defaultValue": ""
+        }
+      ]
+    },
+    {
+      "name": "draft",
+      "label": "Draft",
+      "type": "boolean",
+      "value": false,
+      "defaultValue": ""
     }
   ]
 }

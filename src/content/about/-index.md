@@ -1,6 +1,9 @@
 ---
 title: About The Author
 image: /images/Screenshot from 2026-07-01 17-03-11.png
+image2: ""
+image3: ""
+image4: ""
 meta_title: ""
 description: ""
 education:

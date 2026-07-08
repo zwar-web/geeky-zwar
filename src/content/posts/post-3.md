@@ -4,6 +4,9 @@ meta_title: ""
 description: ""
 date: 2026-04-02T03:00:00+00:00
 image: /images/post/post-3.png
+image2: ""
+image3: ""
+image4: ""
 categories: ["Heroes"]
 featured: true
 draft: false

@@ -4,6 +4,9 @@ meta_title: ""
 description: "Z War hive and territory manager for Dark War Survival alliances — plan layouts, manage territory, and coordinate alliance ops."
 date: 2026-04-01T10:00:00.000Z
 image: /images/Add-to-map.png
+image2: ""
+image3: ""
+image4: ""
 categories:
   - Hive Layouts
   - Territory Tools

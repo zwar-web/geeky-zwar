@@ -4,6 +4,9 @@ meta_title: ""
 description: ""
 date: 2026-04-04T08:00:00Z
 image: /images/post/post-8.png
+image2: ""
+image3: ""
+image4: ""
 categories: ["Territory Tools"]
 featured: true
 draft: false

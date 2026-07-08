@@ -119,6 +119,82 @@
           ]
         }
       ]
+    },
+    {
+      "name": "featured_posts",
+      "label": "Featured posts",
+      "type": "Object",
+      "value": {},
+      "defaultValue": "",
+      "template": [
+        {
+          "name": "enable",
+          "label": "Enable",
+          "type": "boolean",
+          "value": true,
+          "defaultValue": ""
+        },
+        {
+          "name": "title",
+          "label": "Title",
+          "type": "string",
+          "value": "",
+          "defaultValue": ""
+        }
+      ]
+    },
+    {
+      "name": "promotion",
+      "label": "Promotion",
+      "type": "Object",
+      "value": {},
+      "defaultValue": "",
+      "template": [
+        {
+          "name": "enable",
+          "label": "Enable",
+          "type": "boolean",
+          "value": false,
+          "defaultValue": ""
+        },
+        {
+          "name": "image",
+          "label": "Image",
+          "type": "media",
+          "value": "",
+          "defaultValue": ""
+        },
+        {
+          "name": "link",
+          "label": "Link",
+          "type": "string",
+          "value": "",
+          "defaultValue": ""
+        }
+      ]
+    },
+    {
+      "name": "recent_posts",
+      "label": "Recent posts",
+      "type": "Object",
+      "value": {},
+      "defaultValue": "",
+      "template": [
+        {
+          "name": "title",
+          "label": "Title",
+          "type": "string",
+          "value": "",
+          "defaultValue": ""
+        },
+        {
+          "name": "enable",
+          "label": "Enable",
+          "type": "boolean",
+          "value": true,
+          "defaultValue": ""
+        }
+      ]
     }
   ]
 }

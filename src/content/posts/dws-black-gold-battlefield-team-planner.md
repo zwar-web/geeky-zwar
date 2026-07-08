@@ -4,6 +4,9 @@ meta_title: ""
 description: ""
 date: 2026-04-03T12:00:00.000Z
 image: /images/dark-war- bgb- planner.png
+image2: ""
+image3: ""
+image4: ""
 categories:
   - Events
   - Black Gold Battlefield

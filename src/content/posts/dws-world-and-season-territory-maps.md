@@ -4,6 +4,9 @@ meta_title: ""
 description: ""
 date: 2026-04-02T11:00:00.000Z
 image: /images/dws-zwar-season-six-map.png
+image2: ""
+image3: ""
+image4: ""
 categories:
   - Territory Tools
   - DWS Season Maps
