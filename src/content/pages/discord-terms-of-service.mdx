@@ -4,4 +4,53 @@ meta_title: ""
 meta_description: ""
 draft: false
 ---
+​
 
+​
+
+Two top-level slash commands: `/calendar` (members) and `/calendar-admin` (Manage Server).
+
+### `/calendar` — members
+
+| Command                                    | Description                              |
+| ------------------------------------------ | ---------------------------------------- |
+| `/calendar week`                           | This week’s events (Mon–Sun ST)          |
+| `/calendar today`                          | Today’s events                           |
+| `/calendar subscribe`                      | Opt in to reminder DMs                   |
+| `/calendar unsubscribe`                    | Stop reminder DMs                        |
+| `/calendar timezone zone:`                 | Set IANA timezone (e.g. `Europe/London`) |
+| `/calendar request-event text:` `[event:]` | Suggest an event (1 per ST week)         |
+| `/calendar help`                           | How to use the calendar                  |
+
+### `/calendar-admin` — officers (Manage Server)
+
+| Command                           | Description                                  |
+| --------------------------------- | -------------------------------------------- |
+| `/calendar-admin help`            | Admin command reference                      |
+| `/calendar-admin setup`           | #Z-War Events channel & Event Role checklist |
+| `/calendar-admin status`          | Guild calendar & bot permissions             |
+| `/calendar-admin preview`         | Preview weekly embed (ephemeral)             |
+| `/calendar-admin publish`         | Sync Discord scheduled events for this week  |
+| `/calendar-admin channel target:` | Confirm #Z-War Events channel                |
+| `/calendar-admin import file:`    | Import `z-war-guild-calendar.json`           |
+| `/calendar-admin export`          | Download current guild config JSON           |
+| `/calendar-admin reset`           | Reset to catalog defaults                    |
+
+**Groups:**
+
+| Command                                     | Description                                                              |
+| ------------------------------------------- | ------------------------------------------------------------------------ |
+| `/calendar-admin event list`                | List events and enabled state                                            |
+| `/calendar-admin event enable id:`          | Enable a catalog event                                                   |
+| `/calendar-admin event disable id:`         | Disable a catalog event                                                  |
+| `/calendar-admin bgb show`                  | Show BGB slot times                                                      |
+| `/calendar-admin bgb select team: slot:`    | Select battle window (Team A/B, slot 1–3)                                |
+| `/calendar-admin custom list`               | List custom events                                                       |
+| `/calendar-admin custom create …`           | Create custom event (`label`, `kind`, `weekday`, optional `start`/`end`) |
+| `/calendar-admin reminders defaults`        | List guild default reminders                                             |
+| `/calendar-admin reminders event id: mode:` | Per-event reminder mode (`inherit` / `none`)                             |
+| `/calendar-admin share show`                | Show share link and code                                                 |
+| `/calendar-admin share rotate`              | New code (old links stop working)                                        |
+| `/calendar-admin requests list`             | List recent member suggestions                                           |
+
+Defined in `calendar-bot/src/commands.js`.
