@@ -1,0 +1,266 @@
+---
+title: "Discord Calendar Bot"
+meta_title: "Z War Discord DWS Events Reminder Bot"
+meta_description: "this is meta description"
+draft: true
+---
+# Z War Discord DWS Event Calendar
+
+***
+
+## Dark War Events Reminder Tool
+
+The Z War Calendar bot is designed to reduce admin time by notifying members and sending reminders in a “set and forget”  format. The usual Discord Bot slash commands are all there, but for those who find that tedious (including me!), there is a web admin panel. As with all the tools and apps from Z War, no logins, no player IDs or emails are required to use. Instead, an access code is generated and act as an encryption key to access stored data (your events schedule and obviously your guild ID).  The codes allow you to share calendars, either via the app or via the web. The latter feature is useful for non-Discord users or users who live in countries that ban access.&#x20;
+
+The bot only requires access to a spefic channel and permissions to write there, too many bots ask for admin or promoted access, and its often not needed if setup correctly.&#x20;
+
+​
+
+![](/images/discord-events-channel.png)
+
+​
+
+Did you come here for something in particular or just general Riker-bashing? And blowing into maximum warp speed, you appeared for an instant to be in two places at once. We have a saboteur aboard. We know you’re dealing in stolen ore. But I wanna talk about the assassination attempt on Lieutenant Worf. Could someone survive inside a transporter buffer for 75 years? Fate. It protects fools, little children, and ships.
+
+Two top-level slash commands: `/calendar` (members) and `/calendar-admin` (Manage Server).
+
+### `/calendar` — members
+
+| Command                                    | Description                              |
+| ------------------------------------------ | ---------------------------------------- |
+| `/calendar week`                           | This week’s events (Mon–Sun ST)          |
+| `/calendar today`                          | Today’s events                           |
+| `/calendar subscribe`                      | Opt in to reminder DMs                   |
+| `/calendar unsubscribe`                    | Stop reminder DMs                        |
+| `/calendar timezone zone:`                 | Set IANA timezone (e.g. `Europe/London`) |
+| `/calendar request-event text:` `[event:]` | Suggest an event (1 per ST week)         |
+| `/calendar help`                           | How to use the calendar                  |
+
+### `/calendar-admin` — officers (Manage Server)
+
+| Command                           | Description                                  |
+| --------------------------------- | -------------------------------------------- |
+| `/calendar-admin help`            | Admin command reference                      |
+| `/calendar-admin setup`           | #Z-War Events channel & Event Role checklist |
+| `/calendar-admin status`          | Guild calendar & bot permissions             |
+| `/calendar-admin preview`         | Preview weekly embed (ephemeral)             |
+| `/calendar-admin publish`         | Sync Discord scheduled events for this week  |
+| `/calendar-admin channel target:` | Confirm #Z-War Events channel                |
+| `/calendar-admin import file:`    | Import `z-war-guild-calendar.json`           |
+| `/calendar-admin export`          | Download current guild config JSON           |
+| `/calendar-admin reset`           | Reset to catalog defaults                    |
+
+**Groups:**
+
+| Command                                     | Description                                                              |
+| ------------------------------------------- | ------------------------------------------------------------------------ |
+| `/calendar-admin event list`                | List events and enabled state                                            |
+| `/calendar-admin event enable id:`          | Enable a catalog event                                                   |
+| `/calendar-admin event disable id:`         | Disable a catalog event                                                  |
+| `/calendar-admin bgb show`                  | Show BGB slot times                                                      |
+| `/calendar-admin bgb select team: slot:`    | Select battle window (Team A/B, slot 1–3)                                |
+| `/calendar-admin custom list`               | List custom events                                                       |
+| `/calendar-admin custom create …`           | Create custom event (`label`, `kind`, `weekday`, optional `start`/`end`) |
+| `/calendar-admin reminders defaults`        | List guild default reminders                                             |
+| `/calendar-admin reminders event id: mode:` | Per-event reminder mode (`inherit` / `none`)                             |
+| `/calendar-admin share show`                | Show share link and code                                                 |
+| `/calendar-admin share rotate`              | New code (old links stop working)                                        |
+| `/calendar-admin requests list`             | List recent member suggestions                                           |
+
+Defined in `calendar-bot/src/commands.js`.
+
+***
+
+***
+
+### Emphasis
+
+1. Did you come here for something in **particular** or just general
+2. Did you come here for something in <ins>particular</ins>
+3. _Did you come here_
+4. Did you come here for **something** in particular
+5. Did you come here for something in particular
+6. Did you come here for something in particular
+7. URLs and URLs in angle brackets will automatically get turned into links. http://www.example.com or
+8. http://www.example.com and sometimes example.com (but not on Github, for example).
+
+***
+
+### Link
+
+​[I'm an inline-style link](https://www.google.com)​
+
+​[I'm an inline-style link with title](https://www.google.com)​
+
+​[I'm a relative reference to a repository file](../blob/master/LICENSE)​
+
+Or leave it empty and use the .
+
+example.com (but not on Github, for example).
+
+Some text to show that the reference links can follow later.
+
+***
+
+### Ordered List
+
+1. List item
+2. List item
+3. List item
+4. List item
+5. List item
+
+***
+
+### Unordered List
+
+* List item
+* List item
+* List item
+* List item
+* List item
+
+***
+
+### Code and Syntax Highlighting
+
+#### HTML
+
+```html
+<ul>
+  <li className="nav-item">
+    <a className="nav-link" href="/">Home</a>
+  </li>
+  <li className="nav-item">
+    <a className="nav-link" href="about/">About</a>
+  </li>
+</ul>
+```
+
+***
+
+#### CSS
+
+```css
+img {
+  vertical-align: middle;
+  border: 0;
+  max-width: 100%;
+  height: auto;
+}
+```
+
+***
+
+#### JavaScript
+
+```javascript
+window.addEventListener("load", (e) => {
+  document.querySelector(".preloader").style.display = "none";
+});
+```
+
+***
+
+### Button
+
+<Button label="Button" link="#" style="solid"/>
+
+***
+
+### Quote
+
+> Did you come here for something in particular or just general Riker-bashing? And blowing into maximum warp speed, you appeared for an instant to be in two places at once.
+
+***
+
+### Notice
+
+<Notice type="note">
+This is a simple note.
+</Notice>
+<Notice type="tip">
+This is a simple note.
+</Notice>
+<Notice type="info">
+This is a simple note.
+</Notice>
+<Notice type="warning">
+This is a simple note.
+</Notice>
+
+***
+
+### Tab
+
+<Tabs client:load>
+<Tab name="Tab 1">
+#### Did you come here for something in particular?
+
+Did you come here for something in particular or just general Riker-bashing? And blowing into maximum warp speed, you appeared for an instant to be in two places at once. We have a saboteur aboard. We know you’re dealing in stolen ore. But I wanna talk about the assassination attempt on Lieutenant Worf.
+
+Did you come here for something in particular or just general Riker-bashing? And blowing into maximum warp speed, you appeared for an instant to be in two places at once. We have a saboteur aboard. We know you’re dealing in stolen ore. But I wanna talk about the assassination attempt on Lieutenant Worf.\ <br />​\ <br />​
+</Tab>
+<Tab name="Tab 2">
+#### I wanna talk about the assassination attempt
+</Tab>
+<Tab name="Tab 3">
+#### We know you’re dealing in stolen ore
+</Tab>
+</Tabs>
+
+***
+
+### Table
+
+| # | First        | Last         | Handle       |
+| - | ------------ | ------------ | ------------ |
+| 1 | Row:1 Cell:1 | Row:1 Cell:2 | Row:1 Cell:3 |
+| 2 | Row:2 Cell:1 | Row:2 Cell:2 | Row:2 Cell:3 |
+| 3 | Row:3 Cell:1 | Row:3 Cell:2 | Row:3 Cell:3 |
+
+***
+
+### Accordion
+
+<Accordion client:load title="Why should you need to do this?">
+* This is a thing.
+* This is a thing.
+* This is a thing.
+* This is a thing.
+* This is a thing.
+</Accordion>
+<Accordion client:load title="How can I adjust Horizontal centering">
+* This is a thing.
+* This is a thing.
+* This is a thing.
+* This is a thing.
+* This is a thing.
+</Accordion>
+<Accordion client:load title="Should you use Negative margin?">
+* This is a thing.
+* This is a thing.
+* This is a thing.
+* This is a thing.
+* This is a thing.
+</Accordion>
+
+***
+
+### Image
+
+![image](/images/image-placeholder.png)
+
+***
+
+### Youtube video
+
+<Youtube client:load id="C0DPdy98e4c" title="Play:Youtube"/>
+
+***
+
+### Custom video
+
+<Video width="100%" src="https://www.w3schools.com/html/mov_bbb.mp4"/>
+
+​
