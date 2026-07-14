@@ -12,7 +12,6 @@
       "name": "About",
       "url": "/about"
     },
-
     {
       "name": "Contact",
       "url": "/contact"
@@ -29,6 +28,10 @@
         {
           "name": "Categories",
           "url": "/categories"
+        },
+        {
+          "name": "Z-War Discord Bots ",
+          "url": "/z-war-discord-bots"
         }
       ]
     }
@@ -49,6 +52,10 @@
     {
       "name": "Privacy Policy",
       "url": "/privacy-policy"
+    },
+    {
+      "name": "Game Tool",
+      "url": "/app"
     }
   ]
 }
